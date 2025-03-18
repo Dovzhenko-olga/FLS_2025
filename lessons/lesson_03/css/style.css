@@ -1,0 +1,54 @@
+@import url("reset.css");
+
+.entry {
+  color: rgb(112, 0, 216);
+}
+#history {
+  color: rgb(212, 77, 4);
+}
+[href="#history"] {
+  color: rgb(212, 77, 4);
+}
+main li {
+  color: blue;
+}
+[target*="bl"] {
+  color: rgb(126, 4, 73);
+}
+main > a {
+  color: #378447;
+}
+p.text {
+  color: rgb(2, 208, 5);
+}
+.telegram,
+.viber {
+  color: rgb(255, 25, 0);
+}
+.viber {
+  color: rgb(0, 55, 255);
+}
+.article h2 {
+  color: rgb(32, 4, 96);
+}
+.history-title {
+  color: green;
+}
+.entry .accent {
+  color: rgb(61, 211, 1);
+}
+.yellow-text * {
+  color: rgb(242, 255, 0);
+}
+footer > h3 {
+  color: blue;
+}
+.entry ~ p {
+  color: rgb(126, 4, 26);
+}
+.history-title + p {
+  color: rgb(0, 149, 255);
+}
+.red.text {
+  color: red;
+}
