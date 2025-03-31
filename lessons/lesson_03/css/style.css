@@ -52,3 +52,28 @@ footer > h3 {
 .red.text {
   color: red;
 }
+hr {
+  border: 1px solid gray;
+}
+hr ~ ul > li {
+  color: red;
+}
+hr ~ ul > li ~ li {
+  color: green;
+}
+ul > li > ul > li {
+  color: blue;
+}
+ul > li > ul > li ~ li {
+  color: orange;
+}
+ul > li > ul > li > span {
+  color: #a0f0fc;
+}
+li > ol > li {
+  color: #4597f7;
+}
+li > ol > li ~ li,
+li > ol > li ~ li span {
+  color: #5d5d5d;
+}

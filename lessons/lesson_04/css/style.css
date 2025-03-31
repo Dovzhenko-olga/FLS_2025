@@ -1,0 +1,100 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+#up a,
+.up {
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+body {
+  font-family: "KoPubBatang", serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #2c2c2c;
+}
+.article h1 {
+  color: #612f2f;
+  font-family: "volja", monospace;
+  font-size: 25px;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+.article h2 {
+  font-family: "Shantell Sans", cursive;
+  font-size: 25px;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+.article h3 {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.nav-list {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  font-weight: 700;
+  word-spacing: 10px;
+  text-transform: capitalize;
+}
+.entry {
+  font-weight: 700;
+  font-style: italic;
+  text-align: justify;
+}
+#history {
+  font-style: oblique;
+}
+.entry .accent {
+  color: rgb(61, 211, 1);
+  text-decoration: underline;
+}
+.slogan {
+  font-size: 22px;
+  line-height: 1.37;
+  color: rgb(242, 255, 0);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #4597f7;
+  text-shadow: 1px -2px 1px #4597f7;
+}
+.through {
+  text-decoration: line-through;
+}
+.contacts {
+  text-decoration: underline;
+  color: blue;
+}
+footer li {
+  color: #612f2f;
+}
+hr {
+  border: 1px solid gray;
+}
+.bazar {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #808080;
+}
+.bazar h2 {
+  color: #000;
+  font-family: "Shantell Sans", cursive;
+  font-size: 25px;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+.bazar-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
