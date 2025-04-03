@@ -1,0 +1,209 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+.back,
+.up {
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-bottom: 15px;
+}
+body {
+  font-family: "Neucha", cursive;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #2c2c2c;
+}
+h1 {
+  color: #612f2f;
+  font-family: "volja", monospace;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+}
+h2 {
+  font-family: "Shantell Sans", cursive;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+}
+#practice h3 {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.nav-list {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  font-weight: 700;
+  word-spacing: 10px;
+  text-transform: capitalize;
+}
+.padding {
+  background-color: #3870d2;
+  width: 500px;
+  padding: 20px 10px 5px 15px;
+  margin-bottom: 15px;
+}
+.padding img {
+  max-width: 450px;
+  background-color: #5cedb878;
+  padding: 10px 20px;
+}
+.margin {
+  background-color: #da66e2;
+  width: 50%;
+  min-width: 250px;
+  padding: 3%;
+  margin: 0 auto;
+}
+.height {
+  background-color: #b1ece945;
+  min-height: 100px;
+  padding: 5px 15px 10px;
+  margin-top: -25px;
+  margin-bottom: 15px;
+}
+.box-sizing {
+  background-color: #c58bef;
+  box-sizing: content-box;
+  width: 400px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  padding: 30px;
+}
+.overflow {
+  background-color: #87b0d8;
+  max-height: 100px;
+  width: 400px;
+  overflow: clip;
+  margin-bottom: 15px;
+}
+.scroll {
+  background-color: #f1bd82;
+  max-height: 50px;
+  width: 500px;
+  overflow: auto;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+.vertical-align {
+  background-color: #6acbe1;
+  max-width: 50%;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.vertical-align img {
+  width: 50%;
+  vertical-align: baseline;
+}
+.vertical-align span {
+  display: inline-block;
+  width: 40%;
+  padding: 5px;
+}
+hr {
+  border: 1px solid gray;
+  margin-bottom: 25px;
+}
+#business {
+  padding-top: 25px;
+  background-color: #231f8b;
+  margin-bottom: 15px;
+}
+.advantages {
+  color: #737373;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 115px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.2px;
+}
+.title-section {
+  max-width: 765px;
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+.business-subtitle {
+  color: #5a54f2;
+  font-weight: 700;
+  line-height: 1.71;
+  margin-bottom: 10px;
+}
+.business-title {
+  font-family: "CircularStd", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.title-content {
+  font-family: "CircularStd", sans-serif;
+  font-weight: 450;
+}
+.advantages-items {
+  padding-top: 48px;
+  font-size: 0;
+}
+.advantages-item {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  max-width: 230px;
+  width: 100%;
+  margin-right: 30px;
+  padding: 35px 40px;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+.advantages-img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+}
+.item-title {
+  color: #252b42;
+  font-family: "CircularStd", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+}
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #e74040;
+  margin-bottom: 20px;
+}
+.advantages-content {
+  font-size: 14px;
+}
+.top {
+  margin-top: -48px;
+}
+.blue {
+  background-color: #5a54f2;
+}
+.blue p {
+  color: #ffffff;
+}
+.blue .line {
+  background-color: #fff;
+}
+.last {
+  margin-right: 0;
+}
+.contacts {
+  text-decoration: underline;
+  color: blue;
+}
+footer li {
+  color: #612f2f;
+}
