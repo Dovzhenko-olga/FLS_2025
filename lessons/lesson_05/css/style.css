@@ -191,7 +191,8 @@ hr {
 .blue {
   background-color: #5a54f2;
 }
-.blue p {
+.blue p,
+.blue .item-title {
   color: #ffffff;
 }
 .blue .line {
