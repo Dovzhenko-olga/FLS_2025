@@ -1,0 +1,45 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Neucha", cursive;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #2c2c2c;
+  background: repeating-linear-gradient(
+    115deg,
+    rgba(0, 212, 255, 1),
+    rgb(42, 42, 156),
+    rgba(0, 212, 255, 1) 30%
+  );
+}
+header {
+  padding: 20px 0;
+}
+h1 {
+  color: #612f2f;
+  text-shadow: 1px 1px 2px #f6c3c3;
+  font-family: "volja", monospace;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+}
+.container {
+  padding-left: 25px;
+}
+.list-item {
+  text-shadow: 1px 1px 2px #612f2f, 1px 1px 2px #421d1d;
+  margin-bottom: 5px;
+}
+footer {
+  font-family: "Shantell Sans", cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: #612f2f;
+  text-shadow: 1px 1px 2px #f6c3c3;
+  padding: 15px;
+}

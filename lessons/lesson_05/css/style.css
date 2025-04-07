@@ -127,7 +127,6 @@ hr {
   letter-spacing: 0.2px;
 }
 .title-section {
-  max-width: 765px;
   margin-bottom: 70px;
   color: #ffffff;
 }
@@ -145,11 +144,11 @@ hr {
   margin-bottom: 10px;
 }
 .title-content {
+  max-width: 765px;
   font-family: "CircularStd", sans-serif;
   font-weight: 450;
 }
 .advantages-items {
-  padding-top: 48px;
   font-size: 0;
 }
 .advantages-item {
@@ -185,8 +184,8 @@ hr {
 .advantages-content {
   font-size: 14px;
 }
-.top {
-  margin-top: -48px;
+.down {
+  margin-top: 48px;
 }
 .blue {
   background-color: #5a54f2;
