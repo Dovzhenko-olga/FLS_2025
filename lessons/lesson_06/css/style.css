@@ -233,7 +233,7 @@ footer {
 .contact-section {
   margin-bottom: 25px;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
+  line-height: 1.64;
   background: #302c42;
   color: #ffffff;
 }
@@ -261,6 +261,7 @@ footer {
 .contact-item h2 {
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.21;
   margin-bottom: 10px;
 }
 .location {
@@ -295,7 +296,7 @@ footer {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.625;
   background: #302c42;
 }
 .about-container {
@@ -326,10 +327,11 @@ footer {
   margin-bottom: 42px;
   font-size: 36px;
   font-weight: 300;
+  line-height: 1.39;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .about-content h2 > strong {
-  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 5px;
 }
 .about-content h2 > span {
@@ -344,6 +346,7 @@ footer {
   color: #343045;
   font-size: 12px;
   font-weight: 700;
+  line-height: 1.25;
   text-transform: uppercase;
   border-radius: 40px;
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
