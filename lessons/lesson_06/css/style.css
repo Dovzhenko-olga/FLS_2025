@@ -265,27 +265,21 @@ footer {
   line-height: 1.21;
   margin-bottom: 10px;
 }
-.location {
+.contact-content {
   display: inline-block;
   width: 100%;
   padding: 10px 5px 10px 70px;
   vertical-align: top;
+}
+.location {
   background: url(../img/icons/location-icon.png) 0 50% / 70px no-repeat;
   border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
 .phone {
-  display: inline-block;
-  width: 100%;
-  padding: 10px 5px 10px 70px;
-  vertical-align: top;
   background: url(../img/icons/phone-call.png) 0 50% / 59px no-repeat;
   border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
 .email {
-  display: inline-block;
-  width: 100%;
-  padding: 10px 5px 10px 70px;
-  vertical-align: top;
   background: url(../img/icons/mail.png) 0 50% / 65px no-repeat;
 }
 .about-section {
