@@ -268,28 +268,25 @@ footer {
 .location {
   display: inline-block;
   width: 100%;
-  min-height: 116px;
-  padding-left: 70px;
+  padding: 10px 5px 10px 70px;
   vertical-align: top;
-  background: url(../img/icons/location-icon.png) 0 0 / 70px no-repeat;
+  background: url(../img/icons/location-icon.png) 0 50% / 70px no-repeat;
   border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
 .phone {
   display: inline-block;
   width: 100%;
-  min-height: 116px;
-  padding-left: 70px;
+  padding: 10px 5px 10px 70px;
   vertical-align: top;
-  background: url(../img/icons/phone-call.png) 0 0 / 59px no-repeat;
+  background: url(../img/icons/phone-call.png) 0 50% / 59px no-repeat;
   border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
 .email {
   display: inline-block;
   width: 100%;
-  min-height: 116px;
-  padding-left: 70px;
+  padding: 10px 5px 10px 70px;
   vertical-align: top;
-  background: url(../img/icons/mail.png) 0 0 / 65px no-repeat;
+  background: url(../img/icons/mail.png) 0 50% / 65px no-repeat;
 }
 .about-section {
   margin-bottom: 25px;
