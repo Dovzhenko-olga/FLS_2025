@@ -16,7 +16,7 @@ body {
 .header,
 .footer {
   padding: 25px;
-  letter-spacing: 2;
+  letter-spacing: 2px;
 }
 .back,
 .up {
