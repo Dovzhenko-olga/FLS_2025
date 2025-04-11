@@ -6,7 +6,6 @@
 body {
   font-family: "Neucha", cursive;
   font-size: 17px;
-  letter-spacing: 2px;
   color: #2c2c2c;
 }
 .wrapper {
@@ -16,6 +15,7 @@ body {
 .header,
 footer {
   padding: 25px;
+  letter-spacing: 2px;
 }
 .back,
 .up {
@@ -39,6 +39,7 @@ footer {
 }
 .practice-section {
   margin-bottom: 25px;
+  letter-spacing: 2px;
 }
 .task-title {
   color: #612f2f;
@@ -244,7 +245,7 @@ footer {
   padding: 10px 25px;
   border-radius: 90px;
   background: radial-gradient(
-    2900.76% 50.13% at 50% 53.89%,
+    50.13% 2900.76% at 53.89% 50%,
     rgba(58, 52, 86, 0.95) 0%,
     #211e2e 100%
   );

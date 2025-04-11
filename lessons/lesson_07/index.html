@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha:regular&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Урок 7</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="up">
+      <a class="back" href="../index.html" title="Повернутися на сторінку зі списком уроків">На головну</a>
+      <ul class="nav-list">
+        <li><a href="#practice">Практика:</a>
+          <ul class="practice-list">
+            <li><a href="#condition">Псевдокласи стану</a></li>
+            <li><a href="#position">Псевдокласи положення</a></li>
+            <li><a href="#pseudo-elements">Псевдоелементи</a></li>
+          </ul>
+        </li>
+        <li><a href="#business-team">Business team</a></li>
+        <li><a href="#business-information">Business information</a></li>
+        <li><a href="#game">Game</a></li>
+      </ul>
+    </header>
+    <main class="page">
+      <div class="practice-section" id="practice">
+        <div class="container">
+          <h1 class="task-title">Псевдокласи і псевдоелементи</h1>
+          <div class="condition" id="condition">
+            <h2>Псевдокласи стану</h2>
+            <a class="button hover-button" href="#">:hover</a>
+            <div class="hide-button">
+              Покажи
+              <a class="button hidden-button" href="#">:hover</a>
+            </div>
+            <a class="button active-button" href="#">:active</a>
+            <a target="_blank" class="button visited-button"
+              href="https://ab3.army/vakansiy/?utm_source=google&utm_medium=cpc&utm_campaign=search-ab3.army-grants&utm_term=%D0%B4%D0%B5%D1%81%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%20%D1%88%D1%82%D1%83%D1%80%D0%BC%D0%BE%D0%B2%D1%96%20%D0%B2%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B0&utm_content=%D0%B4%D0%B5%D1%81%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%20%D1%88%D1%82%D1%83%D1%80%D0%BC%D0%BE%D0%B2%D1%96%20%D0%B2%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B0&gad_source=1&gclid=EAIaIQobChMI7Nejof3IjAMVQGWRBR2uSRXpEAAYASAAEgIoPvD_BwE">
+              :visited
+            </a>
+            <a class="button focus-button" href="#">:focus</a>
+            <a class="button focus-visible-button" href="#">:focus-visible</a>
+            <div class="hide-button">
+              <a href="#target-button">Покажи</a>
+              <a id="target-button" class="button target-button" href="#">:target</a>
+            </div>
+          </div>
+          <div class="position" id="position">
+            <h2>Псевдокласи положення</h2>
+            <div class="text">
+              <span>First-child</span>
+              <p>
+                <span>First-of-type</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus facilis
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus facilis
+              </p>
+              <p>
+                <span>Last-of-type</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <span>Last-child</span>
+            </div>
+            <div class="children">
+              <h3>Nth-child, :not, :has</h3>
+              <div class="block">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+                <p>
+                  <span class="gradient">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                    Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                  </span>
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+                <p>
+                  <span class="gradient">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                    Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                  </span>
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil consequuntur animi earum!
+                  Nesciunt, adipisci culpa! At voluptatem perferendis doloribus ea
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pseudo-elements" id="pseudo-elements">
+            <h2>Псевдоелементи</h2>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-team-section" id="business-team">
+        <div class="container">
+          <h2>Meet our<br>
+            <strong>Professional Faculty</strong>
+          </h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <a href="#">
+                <img src="img/albert.jpg" alt="Albert Flores">
+                <h3>Albert Flores</h3>
+                <p>Founder of FeatherDev Academy
+                  Masters in Finance | University of New York</p>
+                <p>Read more</p>
+              </a>
+            </li>
+            <li class="team-item">
+              <a href="#">
+                <img src="img/arlene.jpg" alt="Arlene McCoy">
+                <h3>Arlene McCoy</h3>
+                <p>15 Year + Experience in Teaching and Former RBI Grade B Employee. Have Qualified USMLE Mains twice
+                  and is just like a knowledge book of Economics.
+                </p>
+                <p>Read more</p>
+              </a>
+            </li>
+            <li class="team-item">
+              <a href="#">
+                <img src="img/annette.jpg" alt="Annette Black">
+                <h3>Annette Black</h3>
+                <p>10 Year + Experience in Teaching and Former Civil Servant. Specialized in teaching History and no
+                  student wants to miss their class.</p>
+                <p>Read more</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="business-information-section" id="business-information">
+        <div class="container">
+          <div class="information-content">
+            <h2>Best Faculty from New York is <br>
+              <strong>Now Available in California!</strong>
+            </h2>
+            <p>
+              Our Faculty is common in all the branches which helps us to maintain the quality education across India.
+              Now
+              there is no
+              need to go anywhere!
+            </p>
+            <ul class="info-list">
+              <li class="info-item">Learn from Top Educators in your city</li>
+              <li class="info-item">Regular Classes & Doubt Solving 300+</li>
+              <li class="info-item">Selections in 2022-2023 Batch</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="game-section" id="game">
+        <div class="container">
+          <h2>Вперед до перемоги!</h2>
+          <div class="field">
+            <div class="game_item start"></div>
+            <div class="game_item step-1"></div>
+            <div class="game_item step-2"></div>
+            <div class="game_item step-3"></div>
+            <div class="game_item step-4"></div>
+            <div class="game_item step-5"></div>
+            <div class="game_item step-6"></div>
+            <div class="game_item step-7"></div>
+            <div class="game_item step-8"></div>
+            <div class="game_item step-9"></div>
+            <div class="game_item step-10"></div>
+            <div class="game_item step-11"></div>
+            <div class="game_item step-12"></div>
+            <div class="game_item step-13"></div>
+            <div class="game_item finish">Україна переможе!</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#up" class="up">Піднятись наверх</a>
+      <h3 class="contacts">Мої контакти:</h3>
+      <div>
+        <ul>
+          <li><a class="telegram" target="_blank" href="#" title="Перейти в Telegram для спілкування">Telegram</a></li>
+          <li><a class="viber" target="_blank" href="#" title="Перейти у Viber для спілкування">Viber</a></li>
+          <li><a target="_blank" href="#" title="Перейти в LinkedIn для знайомства">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
