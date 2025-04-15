@@ -1,0 +1,126 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+  font-family: "Neucha", cursive;
+  font-size: 20px;
+  color: #2c2c2c;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  background: linear-gradient(125deg, #0700b8 0%, #00ff88 50%, #0700b8 100%);
+  background-attachment: fixed;
+}
+.header,
+.footer {
+  padding: 25px;
+  letter-spacing: 2px;
+}
+.back,
+.up {
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-bottom: 15px;
+}
+.back:hover,
+.up:hover {
+  color: #68b8f5;
+  text-shadow: 1px 1px #1d557a;
+}
+.container {
+  max-width: 1542px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.practice-section {
+  padding: 25px 0;
+  letter-spacing: 2px;
+}
+.task-title {
+  color: #612f2f;
+  font-family: "volja", monospace;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo,
+.hero-part,
+.main-part {
+  margin-bottom: 20px;
+}
+.icons {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+.icon:not(:last-child) {
+  margin-bottom: 15px;
+}
+.arrow-down::before {
+  content: "";
+  width: 16px;
+  height: 10px;
+  margin-right: 15px;
+  margin-left: -25px;
+  vertical-align: middle;
+  background: url(../img/icons/arrow-down.svg);
+}
+.search::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  margin-left: -25px;
+  vertical-align: middle;
+  background: url(../img/icons/search.svg);
+}
+.arrow-right::before {
+  content: "";
+  width: 11px;
+  height: 18px;
+  margin-right: 20px;
+  margin-left: -25px;
+  vertical-align: middle;
+  background: url(../img/icons/arrow-right.svg);
+}
+.hero-img {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.main-img {
+  margin-bottom: 15px;
+}
+.travel {
+  display: inline-block;
+  width: 557px;
+  height: 549px;
+  vertical-align: middle;
+  border-radius: 150px 0px;
+  overflow: hidden;
+}
+.information-img {
+  margin-bottom: 15px;
+}
+.information-img img {
+  margin-bottom: 15px;
+  filter: blur(2.2px);
+}
+.plus::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background: url(../img/icons/plus.svg);
+}
+.contacts {
+  text-decoration: underline;
+  color: #0000ff;
+}
+footer li {
+  color: #612f2f;
+}

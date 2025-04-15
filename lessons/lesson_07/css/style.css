@@ -319,16 +319,19 @@ p:has(.gradient) {
   vertical-align: top;
   max-width: 387px;
   width: 100%;
-  min-height: 476px;
+
   margin-bottom: 20px;
-  padding: 20px;
   display: inline-block;
   font-size: 15px;
-  background: #ffffff;
   box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0),
     0px 246px 98px 0px rgba(0, 0, 0, 0.01),
     0px 138px 83px 0px rgba(0, 0, 0, 0.05),
     0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.1);
+}
+.team-item > a {
+  min-height: 476px;
+  padding: 20px;
+  background: #ffffff;
 }
 .team-list .team-item:not(:last-child) {
   margin-right: 20px;
@@ -349,7 +352,7 @@ p:has(.gradient) {
 .team-item > a > *:last-child {
   color: #fe3f3f;
 }
-.team-item:hover {
+.team-item:hover > a {
   background: #ffbe48;
 }
 .business-information-section {
@@ -373,20 +376,23 @@ p:has(.gradient) {
   font-size: 34px;
   line-height: 1.21;
 }
-.info-list {
+.information-content > ul {
   font-size: 20px;
   padding-left: 44px;
 }
-.info-item:not(:last-child) {
+.information-content > ul > li:not(:last-child) {
   margin-bottom: 15px;
 }
-.info-item::before {
+.information-content > ul > li > p {
+  display: inline-block;
+}
+.information-content > ul > li::before {
   content: "";
   width: 29px;
   height: 29px;
-  margin-right: 15px;
+  margin-right: 9px;
   margin-left: -44px;
-  vertical-align: middle;
+  vertical-align: top;
   background: url(../img/icons/frame.svg);
 }
 .game-section {
