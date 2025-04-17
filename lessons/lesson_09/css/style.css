@@ -1,0 +1,59 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+  font-family: "Neucha", cursive;
+  font-size: 20px;
+  color: #2c2c2c;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  background: linear-gradient(125deg, #0700b8 0%, #00ff88 50%, #0700b8 100%);
+  background-attachment: fixed;
+}
+.header,
+.footer {
+  padding: 25px;
+  letter-spacing: 2px;
+}
+[class*="__back"],
+[class*="__up"] {
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+.back:hover,
+.up:hover {
+  color: #68b8f5;
+  text-shadow: 1px 1px #1d557a;
+}
+.practice-section {
+  padding: 25px 0;
+  letter-spacing: 2px;
+}
+[class*="__container"] {
+  max-width: 1542px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.practice-section__title {
+  color: #612f2f;
+  font-family: "volja", monospace;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer__contacts {
+  text-decoration: underline;
+  color: #0000ff;
+}
+.footer > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer li {
+  color: #612f2f;
+}
