@@ -24,8 +24,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 15px;
 }
-.back:hover,
-.up:hover {
+[class*="__back"]:hover,
+[class*="__up"]:hover {
   color: #68b8f5;
   text-shadow: 1px 1px #1d557a;
 }
