@@ -396,6 +396,7 @@ body {
   margin-bottom: 13px;
 }
 .features__text {
+  max-width: 480px;
   margin-bottom: 39px;
 }
 .footer__contacts {
