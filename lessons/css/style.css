@@ -35,6 +35,10 @@ h1 {
   text-shadow: 1px 1px 2px #612f2f, 1px 1px 2px #421d1d;
   margin-bottom: 5px;
 }
+.list-item:hover {
+  color: #0505e7;
+  text-shadow: 1px 1px #85269d;
+}
 footer {
   font-family: "Shantell Sans", cursive;
   font-size: 20px;
