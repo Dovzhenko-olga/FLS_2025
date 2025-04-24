@@ -215,7 +215,6 @@ body {
   width: 100%;
 }
 .product-card__description {
-  position: relative;
   padding: 12px;
 }
 .product-card__title {
@@ -235,7 +234,7 @@ body {
 }
 .product-card__sell-link {
   position: absolute;
-  top: 23px;
+  bottom: 23px;
   right: 16px;
   width: 40px;
   height: 40px;
@@ -285,10 +284,10 @@ body {
   background: url(../img/icons/blue-bg.svg) 0 0 / cover no-repeat;
 }
 .features__container {
+  position: relative;
   max-width: 1538px;
 }
 .features__item {
-  position: relative;
   padding-left: 108px;
   font-size: 0;
 }
@@ -328,7 +327,7 @@ body {
   content: "";
   position: absolute;
   top: 213px;
-  left: -95px;
+  left: -108px;
   width: 401px;
   height: 401px;
   background: url(../img/icons/ellipse31.svg);
@@ -370,9 +369,11 @@ body {
   vertical-align: top;
 }
 .features__item--right-orient {
+  position: relative;
   text-align: right;
 }
 .features__item--right-orient > .features__content {
+  max-width: 506px;
   padding-top: 30px;
   text-align: left;
 }
