@@ -215,6 +215,7 @@ body {
   width: 100%;
 }
 .product-card__description {
+  max-width: 196px;
   padding: 12px;
 }
 .product-card__title {
