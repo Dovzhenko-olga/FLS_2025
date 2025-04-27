@@ -6,7 +6,7 @@
 
 body {
   font-family: "Neucha", cursive;
-  font-size: 17px;
+  font-size: 22px;
   letter-spacing: 2px;
   color: #2c2c2c;
   background: repeating-linear-gradient(
@@ -32,16 +32,34 @@ h1 {
   padding-left: 25px;
 }
 .list-item {
+  margin-bottom: 15px;
   text-shadow: 1px 1px 2px #612f2f, 1px 1px 2px #421d1d;
-  margin-bottom: 5px;
+}
+.list-item > a {
+  position: relative;
+  padding-left: 30px;
+}
+.list-item > a::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url(../img/tick.svg) center no-repeat;
 }
 .list-item:hover {
   color: #0505e7;
+  text-decoration: underline;
+  text-decoration-style: solid;
   text-shadow: 1px 1px #85269d;
+}
+.list-item:hover > a {
+  text-decoration: underline;
 }
 footer {
   font-family: "Shantell Sans", cursive;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   color: #612f2f;
   text-shadow: 1px 1px 2px #f6c3c3;

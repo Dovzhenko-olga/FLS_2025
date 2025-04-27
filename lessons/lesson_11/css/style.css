@@ -1,0 +1,525 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+  font-family: "Neucha", cursive;
+  font-size: 20px;
+  color: #2c2c2c;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  padding-top: 138px;
+  background: linear-gradient(125deg, #0700b8 0%, #00ff88 50%, #0700b8 100%);
+  background-attachment: fixed;
+}
+.header,
+.footer {
+  padding: 50px 25px 25px;
+  letter-spacing: 2px;
+}
+[class*="__back"],
+[class*="__up"] {
+  padding: 5px 10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+[class*="__back"]:hover,
+[class*="__up"]:hover {
+  color: #68b8f5;
+  text-shadow: 1px 1px #1d557a;
+}
+[class*="__container"] {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header__container {
+  max-width: 1000px;
+}
+.header {
+  background-color: #b39c9ca3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.header__back {
+  position: fixed;
+  top: 25px;
+  left: 30px;
+}
+.header__nav-list {
+  font-size: 23px;
+}
+.header__nav-item {
+  position: relative;
+  display: inline-block;
+  min-width: 250px;
+  text-align: center;
+}
+.header__nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+.header__nav-item:hover .header__nav-link {
+  background-color: #25f07ab9;
+}
+.header__nav-item:hover .header__practice-nav {
+  opacity: 1;
+  visibility: visible;
+}
+.header__nav-link {
+  width: 100%;
+  padding: 20px;
+}
+.header__practice-nav {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  border-top: solid 1px rgba(0, 0, 0, 0.133);
+}
+.practice-nav__item {
+  background-color: #25f07ab9;
+  text-align: left;
+}
+.practice-nav__item:first-child {
+  padding-top: 10px;
+}
+.practice-nav__item:last-child {
+  padding-bottom: 10px;
+}
+.practice-nav__link {
+  width: 100%;
+  padding: 10px 10px;
+}
+.practice-nav__link:hover {
+  background-color: #b39c9cbb;
+}
+.practice-section {
+  padding: 25px 0;
+  letter-spacing: 2px;
+}
+.practice-section__container {
+  padding: 0 30px;
+}
+.practice-section__title {
+  color: #612f2f;
+  font-family: "volja", monospace;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.practice-section__container > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+.practice-section__title ~ div {
+  padding: 20px 0;
+  font-size: 0;
+  text-align: center;
+}
+.practice-section__title ~ div > *:not(:last-child) {
+  margin-right: 30px;
+}
+[class*="-block"] {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #fffafa54;
+  font-size: 20px;
+  vertical-align: top;
+}
+[class*="-block__item"] {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background-color: #5cd295;
+  transform: translate(-10%, -10%);
+}
+.transform-block:hover .transform-block__item {
+  transform: translate(0);
+}
+.scale-block__item {
+  transform: scale(0.7);
+}
+.scale-block:hover .scale-block__item {
+  transform: scale(1);
+}
+.mirror-block__item {
+  transform: scale(-1, -1);
+}
+.mirror-block:hover .mirror-block__item {
+  transform: scale(-1, 1);
+}
+.rotate-block__item {
+  transform: rotate(25deg);
+}
+.rotate-block:hover .rotate-block__item {
+  transform: rotate(-25deg);
+}
+.skew-block__item {
+  transform: skew(-10deg, -15deg);
+}
+.skew-block:hover .skew-block__item {
+  transform: skew(10deg, 15deg);
+}
+.transform-point .transform-block {
+  background-color: #bf54d683;
+}
+.transform-point .transform-block__item {
+  background-color: #17e4f7;
+}
+.transform-block__item--top-left {
+  transform: rotate(25deg);
+  transform-origin: top left;
+}
+.transform-block__item--top-right {
+  transform: rotate(35deg);
+  transform-origin: top right;
+}
+.transform-block__item--top-center {
+  transform: rotate(-35deg);
+  transform-origin: bottom center;
+}
+.transform-block__item--bottom-left {
+  transform: rotate(-25deg);
+  transform-origin: bottom left;
+}
+.transform-block__item--bottom-right {
+  transform: rotate(25deg);
+  transform-origin: bottom right;
+}
+.transform-3d .transform-block {
+  background-color: #fb277f5f;
+  perspective: 200px;
+  perspective-origin: center;
+}
+.transform-3d .transform-block__item {
+  background-color: #eb7fe1;
+}
+.transform-block__item--translate3d {
+  transform: translate3d(-30px, 20px, 40px);
+}
+.transform-block__item--rotateX {
+  transform: rotateX(50deg);
+}
+.transform-block__item--rotate3d {
+  transform: rotate3d(-5, 5, 10, -35deg);
+}
+.transform-block--style3d {
+  transform-style: preserve-3d;
+}
+.transform-block__item--style3d {
+  transform: rotateY(50deg);
+}
+.transform-block:hover .transform-block__item--separate {
+  transform-origin: 113% 80%;
+  rotate: 25deg;
+}
+.card {
+  display: inline-block;
+}
+.card__body {
+  position: relative;
+  perspective: 800px;
+}
+.card__front img,
+.card__back img {
+  width: 500px;
+  height: 400px;
+  object-fit: fill;
+}
+.card__front,
+.card__back {
+  transition: all 0.3s; /* цей рядок підглянуто з уроку, хоч ми це не вчили :) */
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card__front {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+.card__back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card__body:hover .card__front {
+  transform: rotateY(-180deg);
+}
+.card__body:hover .card__back {
+  transform: rotateY(0deg);
+}
+.vehicle {
+  position: relative;
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 50px;
+  color: #ffffffc5;
+  text-align: center;
+  background: url(../img/chumackiy-shlyah.jpg) 0 0 / cover no-repeat;
+}
+.vehicle__star {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  width: 125px;
+  height: 125px;
+  z-index: 5;
+}
+.vehicle__star:hover {
+  rotate: -180deg;
+}
+.vehicle__saturn {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 125px;
+  height: 125px;
+  z-index: 7;
+}
+.vehicle__saturn:hover {
+  transform: rotateY(180deg);
+}
+.vehicle__ufo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #686565;
+  border: 15px dotted #000000;
+  transform: translate(500px) rotateX(125deg);
+  z-index: 7;
+}
+.vehicle__ufo:hover {
+  rotate: 55deg; /* тут дуже випадково в експерименті вийшов прикольний і підходящий ефект, вирішила лишити, бо це ж НЛО ))) */
+}
+.vehicle__ufo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+}
+.vehicle__bg {
+  perspective: 370px;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff5f;
+}
+.vehicle__way {
+  transform: translateY(-450px) rotateX(30deg);
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 70px 80px;
+  background-color: #3d1b4f;
+}
+.vehicle__way h2 {
+  font-size: 94px;
+  margin-bottom: 35px;
+}
+.vehicle__star-flight {
+  position: relative;
+  z-index: 5;
+  font-size: 0;
+  transform: translateY(250px) rotate3d(0, 35, -25, 35deg);
+}
+[class*="wing__elem"] {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+}
+.wing--top-part {
+  transform: rotateX(180deg);
+}
+.wing__light {
+  width: 25px;
+  height: 8px;
+  background-color: #ff3535;
+  transform: translate(190px, -15px);
+}
+
+.wing__light:hover {
+  background-color: #f57547;
+  box-shadow: -5px 0px 15px 5px #f6a049;
+}
+.wing__elem--part-1 {
+  width: 50px;
+  height: 170px;
+  background-color: #095e93;
+}
+.wing__item--inset-1 {
+  border-top: 35px solid #8d8f8f;
+  border-left: 70px solid #8d8f8f;
+  border-bottom: 25px solid transparent;
+  transform: translate(-10px, 70px);
+}
+.wing__item--inset-turbo {
+  width: 7px;
+  height: 35px;
+  background-color: #fff949;
+  transform: translate(-17px, 20px);
+}
+.wing__item--inset-turbo:hover {
+  background-color: #fa7110;
+  box-shadow: -3px 0px 55px 25px #f55630;
+}
+.wing__elem--part-2 {
+  border-top: 120px solid #095e93;
+  border-left: 100px solid #095e93;
+  border-bottom: 50px solid transparent;
+}
+.wing__item--inset-2-gray {
+  border-top: 50px solid #adaeae;
+  border-right: 80px solid #adaeae;
+  border-bottom: 50px solid transparent;
+  transform: translate(-110px, -120px);
+}
+.wing__elem--part-3 {
+  border-top: 70px solid #095e93;
+  border-left: 200px solid #095e93;
+  border-bottom: 50px solid transparent;
+}
+.wing__elem--part-4 {
+  border-top: 20px solid #095e93;
+  border-left: 120px solid #095e93;
+  border-bottom: 50px solid transparent;
+}
+.wing__item--inset-4 {
+  width: 350px;
+  height: 30px;
+  background-color: #534aed;
+  transform: translate(-350px, -20px);
+}
+.wing__item--inset-4-gray {
+  border-top: 20px solid #adaeae;
+  border-left: 160px solid #adaeae;
+  border-bottom: 30px solid transparent;
+  transform: translate(-280px, -20px);
+}
+.wing__elem--part-5 {
+  border-top: 0 solid #534aed;
+  border-left: 100px solid #534aed;
+  border-bottom: 40px solid transparent;
+  transform: translateY(-10px);
+}
+.wing__item--inset-5 {
+  border-top: 0 solid #095e93;
+  border-left: 60px solid #095e93;
+  border-bottom: 20px solid transparent;
+  transform: translate(-100px, 5px);
+}
+[class*="body-flight__"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+.tail {
+  width: 100px;
+  height: 100px;
+  background-color: #5d5c5c;
+  transform: translate(-110px);
+}
+.tail__turbo--part-1 {
+  width: 85px;
+  height: 70px;
+  background-color: #adaeae;
+  transform: translate(-20px, 15px);
+}
+.tail__turbo--part-2 {
+  border-top: 13px solid transparent;
+  border-right: 40px solid #adaeae;
+  border-bottom: 0px solid #adaeae;
+  transform: translate(-80px, -67px);
+}
+.tail__turbo--part-3 {
+  border-top: 0px solid #adaeae;
+  border-right: 40px solid #adaeae;
+  border-bottom: 13px solid transparent;
+  transform: translate(-80px, 2px);
+}
+.tail__turbo--part-4 {
+  width: 30px;
+  height: 20px;
+  background-color: #5d5c5c;
+  transform: translate(-5px, -55px);
+}
+.tail__turbo--part-5 {
+  width: 10px;
+  height: 40px;
+  background-color: #5d5c5c;
+  transform: translate(-30px, -85px);
+}
+.tail__turbo--part-6 {
+  width: 30px;
+  height: 10px;
+  background-color: #5d5c5c;
+  transform: translate(-60px, -110px);
+}
+.cabin {
+  width: 250px;
+  height: 25px;
+  background-color: #5d5c5c;
+  transform: translate(-110px, 25px);
+}
+.cabin__front--part-1 {
+  width: 35px;
+  height: 50px;
+  background-color: #5d5c5c;
+  transform: translate(0px, -50px);
+}
+.cabin__yoda {
+  width: 60px;
+  height: 60px;
+  background: url(../img/yoda.png) center / cover;
+  transform: translate(45px, -180px);
+}
+.cabin__front--part-2 {
+  width: 150px;
+  height: 50px;
+  background-color: #aeadadbf;
+  border-radius: 0 100% 0 0;
+  transform: translate(35px, -100px);
+}
+.cabin__front--part-3 {
+  width: 350px;
+  height: 25px;
+  background-color: #aeadad;
+  border-radius: 0 100% 0 0;
+  transform: translate(35px, -180px);
+}
+.cabin__light {
+  width: 7px;
+  height: 15px;
+  border-radius: 1px 3px 3px 1px;
+  background-color: #f54747;
+  transform: translate(80px, -200px);
+}
+.cabin__light:hover {
+  background-color: #f57547;
+  box-shadow: 10px 0px 15px 5px #f6a049;
+}
+.footer__contacts {
+  text-decoration: underline;
+  color: #0000ff;
+}
+.footer > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer li {
+  color: #612f2f;
+}
