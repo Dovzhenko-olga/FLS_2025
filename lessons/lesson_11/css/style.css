@@ -275,7 +275,7 @@ body {
   height: 125px;
   z-index: 5;
 }
-.vehicle__star:hover {
+.vehicle__star:hover img {
   rotate: -180deg;
 }
 .vehicle__saturn {
@@ -298,6 +298,8 @@ body {
   border: 15px dotted #000000;
   transform: translate(500px) rotateX(125deg);
   z-index: 7;
+  font-size: 40px;
+  color: #000;
 }
 .vehicle__ufo:hover {
   rotate: 55deg; /* тут дуже випадково в експерименті вийшов прикольний і підходящий ефект, вирішила лишити, бо це ж НЛО ))) */
@@ -352,6 +354,8 @@ body {
   height: 8px;
   background-color: #ff3535;
   transform: translate(190px, -15px);
+  font-size: 20px;
+  color: #000;
 }
 
 .wing__light:hover {
@@ -374,6 +378,8 @@ body {
   height: 35px;
   background-color: #fff949;
   transform: translate(-17px, 20px);
+  font-size: 20px;
+  color: #000;
 }
 .wing__item--inset-turbo:hover {
   background-color: #fa7110;
@@ -508,6 +514,8 @@ body {
   border-radius: 1px 3px 3px 1px;
   background-color: #f54747;
   transform: translate(80px, -200px);
+  font-size: 20px;
+  color: #000;
 }
 .cabin__light:hover {
   background-color: #f57547;
