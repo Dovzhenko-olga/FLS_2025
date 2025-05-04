@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Neucha:regular&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Урок 12</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__back" href="../index.html" title="Повернутися на сторінку зі списком уроків">
+        На головну
+      </a>
+      <div class="header__container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#practice">Практика</a>
+            <ul class="header__practice-nav practice-nav">
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#2d-section">2d трансформації</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#origin">Transform origin</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#3d-section">3d трансформації</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#hover">Hover transform</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#animation">Анімації</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#vehicle">Транспортний засіб</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page" id="up">
+      <div class="practice-section" id="practice">
+        <div class="practice-section__container">
+          <h1 class="practice-section__title">CSS анімації</h1>
+          <div class="transform-2d" id="2d-section">
+            <div class="transform-block">
+              <div class="transform-block__item">translate(-10%, -10%)</div>
+            </div>
+            <div class="scale-block">
+              <div class="scale-block__item">scale(0.5)</div>
+            </div>
+            <div class="mirror-block">
+              <div class="mirror-block__item">Mirror: scale(-1, -1)</div>
+            </div>
+            <div class="rotate-block">
+              <div class="rotate-block__item">rotate(25deg)</div>
+            </div>
+            <div class="skew-block">
+              <div class="skew-block__item">skew(-10deg, -15deg)</div>
+            </div>
+          </div>
+          <div class="transform-point" id="origin">
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--top-left">
+                rotate(25deg) scale(0.8)
+              </div>
+            </div>
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--top-right">
+                rotate(35deg) skew(-20deg)
+              </div>
+            </div>
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--top-center">
+                rotate(-35deg) scale(0.8) skew(-10deg)
+              </div>
+            </div>
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--bottom-left">
+                rotate(10deg) rotateY(-55deg)
+              </div>
+            </div>
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--bottom-right">
+                rotate(25deg) skew(20deg, 10deg)
+              </div>
+            </div>
+          </div>
+          <div class="transform-3d" id="3d-section">
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--translate3d">
+                translate3d (-30px, 20px, 40px) rotate(360deg)
+              </div>
+            </div>
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--rotateX">
+                rotateX (50deg)
+              </div>
+            </div>
+            <div class="transform-block">
+              <div class="transform-block__item transform-block__item--rotate3d">
+                rotate3d (-5, 5, 10, -55deg)
+              </div>
+            </div>
+            <div class="transform-block transform-block--style3d">
+              <div class="transform-block__item transform-block__item--style3d">
+                rotateY(50deg) preserve-3d
+              </div>
+            </div>
+            <div class="transform-block transform-block--separate">
+              <div class="transform-block__item transform-block__item--separate">
+                transform-origin: 113% 80%;
+                rotate: 25deg;
+              </div>
+            </div>
+          </div>
+          <div class="hover-transform" id="hover">
+            <div class="revers-card">
+              <div class="revers-card__body">
+                <div class="revers-card__back">
+                  <img src="img/ukraine.jpg" alt="Freedom on a yellow-blue background">
+                </div>
+                <div class="revers-card__front">
+                  <img src="img/flag.jpg" alt="Flag of Ukraine">
+                </div>
+              </div>
+            </div>
+            <div class="delay-transform">
+              <div class="delay-transform__figure"></div>
+            </div>
+          </div>
+          <div class="animation" id="animation">
+            <div class="rotate-3d">
+              <div class="rotate-3d__cube cube">
+                <div class="cube__side cube__side--bottom"></div>
+                <div class="cube__side cube__side--top"></div>
+                <div class="cube__side cube__side--left"></div>
+                <div class="cube__side cube__side--right"></div>
+                <div class="cube__side cube__side--back"></div>
+                <div class="cube__side cube__side--front">cube</div>
+              </div>
+            </div>
+            <div class="newton">
+              <div class="newton__body">
+                <div class="newton__item"></div>
+                <div class="newton__item"></div>
+                <div class="newton__item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle" id="vehicle">
+        <div class="vehicle__star">
+          <img src="img/star.webp" alt="star">
+        </div>
+        <div class="vehicle__saturn">
+          <img src="img/saturn.png" alt="saturn">
+        </div>
+        <div class="vehicle__ufo"></div>
+        <div class="vehicle__container">
+          <div class="vehicle__bg">
+            <div class="vehicle__star-flight flight">
+              <div class="flight__wing wing wing--top-part">
+                <div class="wing__elem wing__elem--part-1">
+                  <div class="wing__item wing__item--inset-1"></div>
+                  <div class="wing__item wing__item--inset-turbo"></div>
+                </div>
+                <div class="wing__elem wing__elem--part-2">
+                  <div class="wing__item wing__item--inset-2-gray"></div>
+                </div>
+                <div class="wing__elem wing__elem--part-3"></div>
+                <div class="wing__elem wing__elem--part-4">
+                  <div class="wing__item wing__item--inset-4"></div>
+                  <div class="wing__item wing__item--inset-4-gray"></div>
+                </div>
+                <div class="wing__elem wing__elem--part-5">
+                  <div class="wing__item wing__item--inset-5"></div>
+                </div>
+                <div class="wing__light"></div>
+              </div>
+              <div class="flight__body body-flight">
+                <div class="body-flight__tail tail">
+                  <div class="tail__turbo tail__turbo--part-1"></div>
+                  <div class="tail__turbo tail__turbo--part-2"></div>
+                  <div class="tail__turbo tail__turbo--part-3"></div>
+                  <div class="tail__turbo tail__turbo--part-4"></div>
+                  <div class="tail__turbo tail__turbo--part-5"></div>
+                  <div class="tail__turbo tail__turbo--part-6"></div>
+                </div>
+                <div class="body-flight__cabin cabin">
+                  <div class="cabin__front cabin__front--part-1"></div>
+                  <div class="cabin__front cabin__front--part-2"></div>
+                  <div class="cabin__yoda"></div>
+                  <div class="cabin__front cabin__front--part-3"></div>
+                  <div class="cabin__light"></div>
+                </div>
+              </div>
+              <div class="flight__wing wing">
+                <div class="wing__elem wing__elem--part-1">
+                  <div class="wing__item wing__item--inset-1"></div>
+                  <div class="wing__item wing__item--inset-turbo"></div>
+                </div>
+                <div class="wing__elem wing__elem--part-2">
+                  <div class="wing__item wing__item--inset-2-gray"></div>
+                </div>
+                <div class="wing__elem wing__elem--part-3"></div>
+                <div class="wing__elem wing__elem--part-4">
+                  <div class="wing__item wing__item--inset-4"></div>
+                  <div class="wing__item wing__item--inset-4-gray"></div>
+                </div>
+                <div class="wing__elem wing__elem--part-5">
+                  <div class="wing__item wing__item--inset-5"></div>
+                </div>
+              </div>
+            </div>
+            <div class="vehicle__way way">
+              <div class="way__text">
+                <h2>Star wars</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, necessitatibus error similique corrupti,
+                  esse distinctio adipisci nostrum ex debitis velit cum laborum est sint optio! Nihil excepturi totam
+                  libero suscipit.Nihil excepturi totam libero suscipit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#up" class="footer__up">Піднятись наверх</a>
+      <h3 class="footer__contacts">Мої контакти:</h3>
+      <ul>
+        <li><a target="_blank" href="#" title="Перейти в Telegram для спілкування">Telegram</a></li>
+        <li><a target="_blank" href="#" title="Перейти у Viber для спілкування">Viber</a></li>
+        <li><a target="_blank" href="#" title="Перейти в LinkedIn для знайомства">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
