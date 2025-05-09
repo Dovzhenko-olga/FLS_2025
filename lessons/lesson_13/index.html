@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Neucha:regular&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Урок 14</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__back" href="../index.html" title="Повернутися на сторінку зі списком уроків">
+        На головну
+      </a>
+      <div class="header__container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#practice">Практика</a>
+            <ul class="header__practice-nav practice-nav">
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#justify-content">Justify-content</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#align-items">Align-items</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#direction">Direction</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#elements">Властивості елементів</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#business">Business</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page" id="up">
+      <div class="practice-section" id="practice">
+        <div class="practice-section__container">
+          <h1 class="practice-section__title">Модуль FLEX</h1>
+          <div class="justify-content-example" id="justify-content">
+            <div class="justify-content-example__content-block">
+              <div class="flex">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">start</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--end">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">end</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--center">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">center</span>
+                <div class="flex__item">4</div>
+              </div>
+            </div>
+            <div class="justify-content-example__space-block">
+              <div class="flex flex--space-between">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">space between</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--space-around">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">space around</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--space-evenly">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">space evenly</span>
+                <div class="flex__item">4</div>
+              </div>
+            </div>
+          </div>
+          <div class="align-items-example" id="align-items">
+            <div class="flex flex--align-items-start">
+              <div class="flex__item">1</div>
+              <div class="flex__item">2</div>
+              <span class="flex__item">align-items <br> flex-start</span>
+              <div class="flex__item">4</div>
+            </div>
+            <div class="flex flex--align-items-end">
+              <div class="flex__item">1</div>
+              <div class="flex__item">2</div>
+              <span class="flex__item">align-items <br> flex-end</span>
+              <div class="flex__item">4</div>
+            </div>
+            <div class="flex flex--align-items-center">
+              <div class="flex__item">1</div>
+              <div class="flex__item">2</div>
+              <span class="flex__item">align-items <br> center</span>
+              <div class="flex__item">4</div>
+            </div>
+          </div>
+          <div class="direction-example" id="direction">
+            <div class="direction-example__row-block">
+              <div class="flex flex--row-reverse">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">reverse</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--end">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">reverse end</span>
+                <div class="flex__item">4</div>
+              </div>
+            </div>
+            <div class="direction-example__column-block">
+              <div class="flex flex--column">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">column</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--column-align-items-end">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">column <br> align-items-end</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--column-align-items-center">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">column <br> align-items-center</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--column-reverse">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">column-reverse space-between</span>
+                <div class="flex__item">4</div>
+              </div>
+            </div>
+          </div>
+          <div class="elements-example" id="elements">
+            <div class="elements-example__grow-shrink">
+              <div class="flex flex--grow">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">grow</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--grow-all">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">3</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--grow-all">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">grow all</span>
+                <div class="flex__item">4</div>
+              </div>
+              <div class="flex flex--shrink">
+                <div class="flex__item">1</div>
+                <div class="flex__item">2</div>
+                <span class="flex__item">shrink</span>
+                <div class="flex__item">4</div>
+              </div>
+            </div>
+            <div class="flex flex--align-self">
+              <div class="flex__item">1</div>
+              <div class="flex__item">2</div>
+              <span class="flex__item">
+                align self <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta eum optio aut amet molestiae
+                asperiores quasi, excepturi quo, nobis dolores ad. Nemo, ullam. Laboriosam debitis sequi omnis ad
+                temporibus.
+              </span>
+              <div class="flex__item">4</div>
+            </div>
+            <div class="flex flex--order">
+              <div class="flex__item">1</div>
+              <div class="flex__item">2</div>
+              <span class="flex__item">
+                3 order <br>
+                Lorem ipsum dolor sit amet.
+              </span>
+              <div class="flex__item">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="business-section" id="business">
+        <div class="business-section__workers workers">
+          <div class="workers__container">
+            <h2 class="workers__title">
+              Meet our
+              <strong>Professional Faculty</strong>
+            </h2>
+            <ul class="workers__list">
+              <li class="workers__item worker-card">
+                <picture class="worker-card__photo">
+                  <source srcset="img/albert.webp" type="image/webp">
+                  <img src="img/" alt="Albert Flores">
+                </picture>
+                <h3 class="worker-card__name">Albert Flores</h3>
+                <div class="worker-card__description">
+                  <p>
+                    Founder of FeatherDev Academy
+                    Masters in Finance | University of New York
+                  </p>
+                </div>
+                <a class="worker-card__link" href="#">Read more</a>
+              </li>
+              <li class="workers__item worker-card">
+                <picture class="worker-card__photo">
+                  <source srcset="img/arlene.webp" type="image/webp">
+                  <img src="img/arlene.jpg" alt="Arlene McCoy">
+                </picture>
+                <h3 class="worker-card__name">Arlene McCoy</h3>
+                <div class="worker-card__description">
+                  <p>
+                    15 Year + Experience in Teaching and Former RBI Grade B Employee. Have Qualified USMLE Mains twice
+                    and
+                    is just like a knowledge book of Economics.
+                  </p>
+                </div>
+                <a class="worker-card__link" href="#">Read more</a>
+              </li>
+              <li class="workers__item worker-card">
+                <picture class="worker-card__photo">
+                  <source srcset="img/annette.webp" type="image/webp">
+                  <img src="img/annette.jpg" alt="Annette Black">
+                </picture>
+                <h3 class="worker-card__name">Annette Black</h3>
+                <div class="worker-card__description">
+                  <p>
+                    10 Year + Experience in Teaching and Former Civil Servant. Specialized in teaching History and no
+                    student wants to miss their class.
+                  </p>
+                </div>
+                <a class="worker-card__link" href="#">Read more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="business-section__information information">
+          <div class="information__container">
+            <div class="information__content information__content--margin">
+              <h2 class="information__title">
+                Best Faculty from New York is
+                <strong>Now Available in California!</strong>
+              </h2>
+              <p>
+                Our Faculty is common in all the branches which helps us to maintain the quality education across India.
+                Now there is no need to go anywhere!
+              </p>
+              <ul class="information__list">
+                <li class="information__item">Learn from Top Educators in your city</li>
+                <li class="information__item">Regular Classes & Doubt Solving 300+</li>
+                <li class="information__item">Selections in 2022-2023 Batch</li>
+              </ul>
+            </div>
+            <picture class="information__image">
+              <source srcset="img/working-girl.webp" type="image/webp">
+              <img src="img/working-girl.jpg" alt="girl working on the sofa with laptop">
+            </picture>
+          </div>
+        </div>
+        <div class="business-section__advantages advantages">
+          <div class="advantages__container">
+            <h2 class="advantages__title">
+              FeatherDev Academy is the
+              <strong>Best USMLE/Civil Services Coaching in California</strong>
+            </h2>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <img class="advantages__picture" src="img/icons/selection.svg" alt="selection">
+                <p class="advantages__text">
+                  <strong>2000+</strong>
+                  Selection
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__picture" src="img/icons/star.svg" alt="star">
+                <p class="advantages__text">
+                  <strong>10 Years +</strong>
+                  Experience faculty
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__picture" src="img/icons/courses.svg" alt="courses">
+                <p class="advantages__text">
+                  <strong>10+</strong>
+                  Entrance Courses
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__picture" src="img/icons/book.svg" alt="book">
+                <p class="advantages__text">
+                  <strong>100+</strong>
+                  Entrance Books
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#up" class="footer__up">Піднятись наверх</a>
+      <h3 class="footer__contacts">Мої контакти:</h3>
+      <ul>
+        <li><a target="_blank" href="#" title="Перейти в Telegram для спілкування">Telegram</a></li>
+        <li><a target="_blank" href="#" title="Перейти у Viber для спілкування">Viber</a></li>
+        <li><a target="_blank" href="#" title="Перейти в LinkedIn для знайомства">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

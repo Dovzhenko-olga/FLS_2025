@@ -38,7 +38,7 @@ h1 {
 .list-item > a {
   position: relative;
   padding-left: 30px;
-  transition: color ease 0.4s;
+  transition: all ease 0.4s;
 }
 .list-item > a::before {
   content: "";
@@ -51,10 +51,13 @@ h1 {
 }
 .list-item > a:hover {
   color: #0505e7;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-decoration: underline;
   text-decoration-style: solid;
   text-shadow: 1px 1px #85269d;
+}
+.list-item > a:hover::before {
+  background: url(../img/tick-hover.svg) center no-repeat;
 }
 footer {
   font-family: "Shantell Sans", cursive;
