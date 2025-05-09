@@ -313,6 +313,7 @@ body {
 }
 .worker-card__link {
   color: #fe3f3f;
+  align-self: flex-start;
 }
 .business-section__information {
   padding-top: 55px;
@@ -323,13 +324,15 @@ body {
   color: #412672;
 }
 .information__container {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 .information__content {
   display: flex;
   flex-direction: column;
+  flex-basis: 518px;
   gap: 20px;
-  max-width: 518px;
   padding: 98px 0 67px 0;
 }
 .information__title {
@@ -359,12 +362,9 @@ body {
   height: 29px;
   background: url(../img/icons/check.svg) 0 0 / 100% no-repeat;
 }
-.information__image img {
-  position: absolute;
-  top: 0;
-  right: -170px;
-  max-width: 764px;
-  max-height: 521px;
+.information__image {
+  margin-right: -170px;
+  flex-basis: 764px;
   object-fit: cover;
 }
 .business-section__advantages {
@@ -392,7 +392,7 @@ body {
   line-height: 1.23;
   flex-shrink: 0;
 }
-.advantages__text {
+.advantages__text p {
   display: flex;
   flex-direction: column;
   align-items: center;
