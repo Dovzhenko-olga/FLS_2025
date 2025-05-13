@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Neucha:regular&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Урок 14</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__back" href="../index.html" title="Повернутися на сторінку зі списком уроків">
+        На головну
+      </a>
+      <div class="header__container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#practice">Сьогодні тут тільки форма</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page" id="up">
+      <h1 class="page__title">Форми</h1>
+      <div class="practice-section" id="practice">
+        <div class="practice-section__container">
+          <form method="post" action="#" enctype="multipart/form-data" class="form">
+            <div class="form__client-block">
+              <div class="form__billing">
+                <h2 class="form__title">Billing Information</h2>
+                <div class="form__person">
+                  <div class="form__name-info">
+                    <label class="form__label">
+                      First name
+                      <input class="form__item" type="text" placeholder="Your first name">
+                    </label>
+                    <label class="form__label">
+                      Last name
+                      <input class="form__item" type="text" placeholder="Your last name">
+                    </label>
+                    <label class="form__label">
+                      <div>Company Name <span>(optional)</span></div>
+                      <input class="form__item" type="text" placeholder="Company name">
+                    </label>
+                  </div>
+                  <div class="form__address-info">
+                    <label class="form__label form__label--long">
+                      Street Address
+                      <input class="form__item" type="text" placeholder="Your address">
+                    </label>
+                  </div>
+                  <div class="form__region-info">
+                    <label class="form__label">
+                      Country / Region
+                      <input class="form__item" type="select" placeholder="Select">
+                    </label>
+                    <label class="form__label">
+                      States
+                      <input class="form__item" type="select" placeholder="Selects">
+                    </label>
+                    <label class="form__label">
+                      Zip Code
+                      <input class="form__item" type="text" placeholder="Zip Code">
+                    </label>
+                  </div>
+                  <div class="form__contact-info">
+                    <label class="form__label">
+                      Email
+                      <input class="form__item" type="email" placeholder="Email Address">
+                    </label>
+                    <label class="form__label">
+                      Phone
+                      <input class="form__item" type="tel" placeholder="Phone number">
+                    </label>
+                  </div>
+                </div>
+                <label class="form__check-label">
+                  <input class="form__item" type="checkbox" name="" id="">
+                  Ship to a different address
+                </label>
+              </div>
+              <div class="form__line"></div>
+              <div class="form__additional">
+                <h2 class="form__title">Additional Info</h2>
+                <div class="form__notes">
+                  <label class="form__label form__label--long">
+                    Order Notes (Optional)
+                    <input class="form__item" type="text"
+                      placeholder="Notes about your order, e.g. special notes for delivery">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form__order-block">
+              <div class="form__order-summary">
+                <h2 class="form__order-title">Order Summery</h2>
+                <ul class="form__products">
+                  <li class="form__product product">
+                    <div class="product__item">
+                      <img class="product__image" src="img/green-capsicum.jpg" alt="Green Capsicum">
+                      <p class="product__name">Green Capsicum</p>
+                      <p class="product__amount">x5</p>
+                    </div>
+                    <div class="product__price">$70.00</div>
+                  </li>
+                  <li class="form__product product">
+                    <div class="product__item">
+                      <img class="product__image" src="img/red-capsicum.jpg" alt="Red Capsicum">
+                      <span class="product__name">Red Capsicum</span>
+                      <span class="product__amount">x1</span>
+                    </div>
+                    <div class="product__price">$14.00</div>
+                  </li>
+                </ul>
+                <div class="form__bill bill">
+                  <div class="bill__item">
+                    Subtotal:
+                    <span>$84.00</span>
+                  </div>
+                  <div class="bill__line"></div>
+                  <div class="bill__item">
+                    Shipping:
+                    <span>Free</span>
+                  </div>
+                  <div class="bill__line"></div>
+                  <div class="bill__item bill__item--total">
+                    Total:
+                    <span>$84.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form__order-payment">
+                <h2 class="form__order-title">Payment Method</h2>
+                <label>
+                  <input checked type="radio" name="method" id="">
+                  Cash on Delivery
+                </label>
+                <label>
+                  <input type="radio" name="method" id="">
+                  Paypal
+                </label>
+                <label>
+                  <input type="radio" name="method" id="">
+                  Amazon Pay
+                </label>
+              </div>
+              <button class="form__button">Place Order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#up" class="footer__up">Піднятись наверх</a>
+      <h2 class="footer__contacts">Мої контакти:</h2>
+      <ul>
+        <li><a target="_blank" href="#" title="Перейти в Telegram для спілкування">Telegram</a></li>
+        <li><a target="_blank" href="#" title="Перейти у Viber для спілкування">Viber</a></li>
+        <li><a target="_blank" href="#" title="Перейти в LinkedIn для знайомства">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
