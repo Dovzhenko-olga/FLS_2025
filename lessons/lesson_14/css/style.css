@@ -144,9 +144,9 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-.form__label {
+/* .form__label {
   align-self: flex-start;
-}
+} */
 .form__label span {
   color: #808080;
 }
@@ -170,6 +170,15 @@ body {
 .form__input:focus::placeholder,
 .form__textarea:focus::placeholder {
   opacity: 0;
+}
+select {
+  color: #999;
+}
+option {
+  color: #1a1a1a;
+}
+select:valid {
+  color: #1a1a1a;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

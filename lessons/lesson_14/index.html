@@ -60,8 +60,8 @@
                   <div class="form__region-info">
                     <label class="form__item">
                       <span class="form__label">Country / Region</span>
-                      <select name="form[country]" class="form__input">
-                        <option value="null">Select</option>
+                      <select name="form[country]" class="form__input" required>
+                        <option selected disabled hidden value="">Select</option>
                         <option value="ukraine">Ukraine</option>
                         <option value="poland">Poland</option>
                         <option value="germany">Germany</option>
@@ -69,8 +69,12 @@
                     </label>
                     <label class="form__item">
                       <span class="form__label">States</span>
-                      <select name="form[state]" class="form__input">
-                        <option value="null">Selects</option>
+                      <select name="form[state]" class="form__input" required>
+                        <option selected disabled hidden value="">Selects</option>
+                        <option value="north">North</option>
+                        <option value="south">South</option>
+                        <option value="west">West</option>
+                        <option value="east">East</option>
                       </select>
                     </label>
                     <label class="form__item">
