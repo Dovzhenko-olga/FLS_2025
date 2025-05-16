@@ -22,6 +22,9 @@
           <li class="header__nav-item">
             <a class="header__nav-link" href="#practice">Сьогодні тут тільки форма</a>
           </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#switcher">І маленький світчер))</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -35,84 +38,99 @@
                 <h2 class="form__title">Billing Information</h2>
                 <div class="form__person">
                   <div class="form__name-info">
-                    <label class="form__label">
-                      First name
-                      <input class="form__item" type="text" placeholder="Your first name">
+                    <label class="form__item">
+                      <span class="form__label">First name</span>
+                      <input class="form__input" required name="form[]" type="text" placeholder="Your first name">
                     </label>
-                    <label class="form__label">
-                      Last name
-                      <input class="form__item" type="text" placeholder="Your last name">
+                    <label class="form__item">
+                      <span class="form__label">Last name</span>
+                      <input class="form__input" required name="form[]" type="text" placeholder="Your last name">
                     </label>
-                    <label class="form__label">
-                      <div>Company Name <span>(optional)</span></div>
-                      <input class="form__item" type="text" placeholder="Company name">
+                    <label class="form__item">
+                      <span class="form__label">Company Name <span>(optional)</span></span>
+                      <input class="form__input" name="form[]" type="text" placeholder="Company name">
                     </label>
                   </div>
                   <div class="form__address-info">
-                    <label class="form__label form__label--long">
-                      Street Address
-                      <input class="form__item" type="text" placeholder="Your address">
+                    <label class="form__item form__item--long">
+                      <span class="form__label">Street Address</span>
+                      <input class="form__input" required name="form[]" type="text" placeholder="Your address">
                     </label>
                   </div>
                   <div class="form__region-info">
-                    <label class="form__label">
-                      Country / Region
-                      <input class="form__item" type="select" placeholder="Select">
+                    <label class="form__item">
+                      <span class="form__label">Country / Region</span>
+                      <select name="form[country]" class="form__input">
+                        <option value="null">Select</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="poland">Poland</option>
+                        <option value="germany">Germany</option>
+                      </select>
                     </label>
-                    <label class="form__label">
-                      States
-                      <input class="form__item" type="select" placeholder="Selects">
+                    <label class="form__item">
+                      <span class="form__label">States</span>
+                      <select name="form[state]" class="form__input">
+                        <option value="null">Selects</option>
+                      </select>
                     </label>
-                    <label class="form__label">
-                      Zip Code
-                      <input class="form__item" type="text" placeholder="Zip Code">
+                    <label class="form__item">
+                      <span class="form__label">Zip Code</span>
+                      <input class="form__input" required type="number" placeholder="Zip Code">
                     </label>
                   </div>
                   <div class="form__contact-info">
-                    <label class="form__label">
-                      Email
-                      <input class="form__item" type="email" placeholder="Email Address">
+                    <label class="form__item">
+                      <span class="form__label">Email</span>
+                      <input class="form__input" type="email" placeholder="Email Address">
                     </label>
-                    <label class="form__label">
-                      Phone
-                      <input class="form__item" type="tel" placeholder="Phone number">
+                    <label class="form__item">
+                      <span class="form__label">Phone</span>
+                      <input class="form__input" required type="tel" placeholder="Phone number">
                     </label>
                   </div>
                 </div>
-                <label class="form__check-label">
-                  <input class="form__item" type="checkbox" name="" id="">
-                  Ship to a different address
+                <label class="form__check-item">
+                  <input class="form__input" type="checkbox" name="form[]">
+                  <span class="form__label">Ship to a different address</span>
                 </label>
               </div>
               <div class="form__line"></div>
               <div class="form__additional">
                 <h2 class="form__title">Additional Info</h2>
                 <div class="form__notes">
-                  <label class="form__label form__label--long">
-                    Order Notes (Optional)
-                    <input class="form__item" type="text"
-                      placeholder="Notes about your order, e.g. special notes for delivery">
+                  <label class="form__item form__item--long">
+                    <span class="form__label">Order Notes (Optional)</span>
+                    <textarea name="form[]" class="form__textarea"
+                      placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
                   </label>
                 </div>
               </div>
             </div>
             <div class="form__order-block">
               <div class="form__order-summary">
-                <h2 class="form__order-title">Order Summery</h2>
+                <h2 class="form__order-title">Order Summary</h2>
                 <ul class="form__products">
                   <li class="form__product product">
                     <div class="product__item">
-                      <img class="product__image" src="img/green-capsicum.jpg" alt="Green Capsicum">
-                      <p class="product__name">Green Capsicum</p>
-                      <p class="product__amount">x5</p>
+                      <a class="product__link" href="#">
+                        <img class="product__image" src="img/green-capsicum.jpg" alt="Green Capsicum">
+                        <span class="product__name">Green Capsicum</span>
+                      </a>
+                      <span class="product__amount">x
+                        <input type="number" value="5">
+                      </span>
                     </div>
                     <div class="product__price">$70.00</div>
                   </li>
                   <li class="form__product product">
                     <div class="product__item">
-                      <img class="product__image" src="img/red-capsicum.jpg" alt="Red Capsicum">
-                      <span class="product__name">Red Capsicum</span>
-                      <span class="product__amount">x1</span>
+                      <a class="product__link" href="#">
+                        <img class="product__image" src="img/red-capsicum.jpg" alt="Red Capsicum">
+                        <span class="product__name">Red Capsicum</span>
+                      </a>
+                      <span class="product__amount">x
+                        <input type="number" value="1">
+                      </span>
                     </div>
                     <div class="product__price">$14.00</div>
                   </li>
@@ -136,22 +154,34 @@
               </div>
               <div class="form__order-payment">
                 <h2 class="form__order-title">Payment Method</h2>
-                <label>
-                  <input checked type="radio" name="method" id="">
-                  Cash on Delivery
-                </label>
-                <label>
-                  <input type="radio" name="method" id="">
-                  Paypal
-                </label>
-                <label>
-                  <input type="radio" name="method" id="">
-                  Amazon Pay
-                </label>
+                <div class="form__payment-radio">
+                  <label class="form__item-radio">
+                    <input class="form__input" checked type="radio" name="form[payment]">
+                    <span class="form__label">Cash on Delivery</span>
+                  </label>
+                  <label class="form__item-radio">
+                    <input class="form__input" type="radio" name="form[payment]">
+                    <span class="form__label">Paypal</span>
+                  </label>
+                  <label class="form__item-radio">
+                    <input class="form__input" type="radio" name="form[payment]">
+                    <span class="form__label form__label--dark">Amazon Pay</span>
+                  </label>
+                </div>
               </div>
               <button class="form__button">Place Order</button>
             </div>
           </form>
+        </div>
+      </div>
+      <div class="switcher-section" id="switcher">
+        <div class="switcher-section__container">
+          <div class="switcher">
+            <h2 class="switcher__title switcher__title--margin">Мій перший світчер</h2>
+            <label class="switcher__label">
+              <input type="checkbox">
+            </label>
+          </div>
         </div>
       </div>
     </main>
