@@ -172,6 +172,8 @@ body {
   opacity: 0;
 }
 select {
+  font-family: inherit;
+  font-size: inherit;
   color: #999;
 }
 option {
@@ -279,12 +281,12 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: opacity 0.5s ease;
 }
 .product__link {
   display: flex;
   align-items: center;
   gap: 6px;
+  transition: opacity 0.5s ease;
 }
 .product__link:hover {
   opacity: 0.8;
@@ -294,7 +296,7 @@ a:focus-visible {
   height: 60px;
 }
 .product__amount input {
-  max-width: 20px;
+  max-width: 30px;
   padding: 0 5px;
 }
 .product__price {
@@ -385,6 +387,9 @@ a:focus-visible {
 }
 .form__button:hover {
   background-color: #2c742f;
+}
+.form__button:focus-visible {
+  outline-color: #2c742f;
 }
 .switcher-section {
   padding: 25px 0;
