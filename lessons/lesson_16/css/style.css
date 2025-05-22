@@ -56,6 +56,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-wrap: nowrap;
+  transition: color 0.5s ease;
 }
 .menu__list {
   position: relative;
@@ -198,6 +199,9 @@ body {
   color: #612f2f;
 }
 @media (any-hover: hover) {
+  .header__logo:hover .logo-header__text {
+    color: #a14e0a;
+  }
   .menu__item:hover a::after {
     width: 100%;
   }
