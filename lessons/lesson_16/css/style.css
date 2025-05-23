@@ -50,6 +50,7 @@ body {
 .logo-header__icon {
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
 }
 .logo-header__text {
   font-size: 18px;
@@ -321,6 +322,9 @@ body {
 @media (max-width: 489.98px) {
   .logo-header__text {
     display: none;
+  }
+  .header__activity {
+    gap: 20px;
   }
   .footer__back {
     right: 50px;
