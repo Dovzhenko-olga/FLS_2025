@@ -216,7 +216,7 @@ body {
   font-size: 16px;
   text-decoration-line: line-through;
 }
-.product__cart-link {
+.product__cart-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +227,7 @@ body {
   background-color: #f2f2f2;
   transition: all 0.5s ease;
 }
-.product__cart-link::after {
+.product__cart-btn::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -261,8 +261,8 @@ body {
   visibility: hidden;
   transition: opacity 0.5s ease;
 }
-.product__heart-link,
-.product__eye-link {
+.product__heart-btn,
+.product__eye-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,13 +272,13 @@ body {
   border: 1px solid #f2f2f2;
   transition: all 0.5s ease;
 }
-.product__heart-link::after {
+.product__heart-btn::after {
   content: "";
   width: 20px;
   height: 20px;
   background: url(../img/icons/heart.svg);
 }
-.product__eye-link::after {
+.product__eye-btn::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -471,13 +471,13 @@ body {
   .features__item:hover::before {
     opacity: 1;
   }
-  .features__item:hover .product__cart-link {
+  .features__item:hover .product__cart-btn {
     background-color: #00b207;
   }
-  .features__item:hover .product__cart-link::after {
+  .features__item:hover .product__cart-btn::after {
     background: url(../img//icons/white-bag.svg);
   }
-  .features__item:hover .product__cart-link:hover {
+  .features__item:hover .product__cart-btn:hover {
     background-color: #2c742f;
   }
   .features__item:hover .product__title {
@@ -493,15 +493,15 @@ body {
   .product__img-link:hover::after {
     opacity: 1;
   }
-  .product__heart-link:hover,
-  .product__eye-link:hover {
+  .product__heart-btn:hover,
+  .product__eye-btn:hover {
     background-color: #00b207;
     border-color: #00b207;
   }
-  .product__heart-link:hover::after {
+  .product__heart-btn:hover::after {
     background: url(../img//icons/white-heart.svg);
   }
-  .product__eye-link:hover::after {
+  .product__eye-btn:hover::after {
     background: url(../img//icons/white-eye.svg);
   }
   .blog__card:hover {
@@ -530,10 +530,10 @@ body {
     opacity: 1;
     visibility: visible;
   }
-  .product__cart-link {
+  .product__cart-btn {
     background-color: #00b207;
   }
-  .product__cart-link::after {
+  .product__cart-btn::after {
     background: url(../img//icons/white-bag.svg);
   }
 }
