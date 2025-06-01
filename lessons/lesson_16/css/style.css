@@ -53,10 +53,10 @@ body {
   flex-shrink: 0;
 }
 .logo-header__text {
+  flex: 1 0 161px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  text-wrap: nowrap;
   transition: color 0.5s ease;
 }
 .menu__list {
@@ -64,7 +64,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 10px;
   align-items: center;
 }
 .menu__item {
@@ -93,13 +94,13 @@ body {
   position: relative;
 }
 .orange-button {
+  flex: 1 0 176px;
   display: flex;
   gap: 8px;
   align-items: center;
   padding: 8px 30px;
   font-size: 16px;
   color: #fff;
-  text-wrap: nowrap;
   border-radius: 999px;
   background-color: #f26522;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
@@ -199,7 +200,7 @@ body {
 .footer li {
   color: #612f2f;
 }
-@media (any-hover: hover) {
+@media (any-hover: hover), (pointer: fine) {
   .header__logo:hover .logo-header__text {
     color: #a14e0a;
   }
@@ -233,25 +234,31 @@ body {
 @media (max-width: 991.98px) {
   .logo-header__text {
     font-size: 16px;
+    flex-basis: 143px;
   }
   .menu__list {
     font-size: 12px;
     gap: 10px;
   }
   .orange-button {
+    flex-basis: 132px;
     font-size: 14px;
     padding: 8px 13px;
   }
 }
 @media (max-width: 767.98px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .menu__body {
     opacity: 0;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 74px);
     overflow: auto;
     left: -100%;
-    top: 97px;
+    top: 74px;
     z-index: 3;
     padding: 25px 15px;
     background-color: #fde7cf;

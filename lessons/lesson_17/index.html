@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Neucha:regular&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Урок 17</title>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__back" href="../index.html" title="Повернутися на сторінку зі списком уроків">
+        На головну
+      </a>
+      <div class="header__container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#practice">Практика</a>
+            <ul class="header__practice-nav practice-nav">
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#grid-area">Grid-area</a>
+              </li>
+              <li class="practice-nav__item">
+                <a class="practice-nav__link" href="#example">Examples</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#blossomia">Blossomia</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#ecobazar">Ecobazar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page" id="up">
+      <div class="page__container">
+        <h1 class="page__title">Модуль GRID.</h1>
+      </div>
+      <div class="practice" id="practice">
+        <div class="practice__container">
+          <div class="clear-grid">
+            <div class="grid grid--columns-template">
+              <div class="grid__item">1 явна сітка</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3 grid-template-columns</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--columns-repeat">
+              <div class="grid__item">1</div>
+              <div class="grid__item">2 grid-columns-repeat</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--rows-template">
+              <div class="grid__item">1 grid-template-rows</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--rows-repeat">
+              <div class="grid__item">1</div>
+              <div class="grid__item">2 grid-rows-repeat</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, temporibus.
+              </div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--universal">
+              <div class="grid__item">1 universal property</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--auto-flow">
+              <div class="grid__item">1 grid auto flow - column</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5 вивід об'єктів у сітку</div>
+              <div class="grid__item">6</div>
+            </div>
+          </div>
+          <div class="implicit-grid">
+            <div class="grid grid--simple-one-row">
+              <div class="grid__item">1 неявна сітка</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4 явно один рядок на дві колонки</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--width-of-column">
+              <div class="grid__item">1 ширина неявної колонки</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--height-of-row">
+              <div class="grid__item">1 висота неявного рядка</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--equal-height">
+              <div class="grid__item">1</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3 рівні висоти для усіх рядків</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+              <div class="grid__item">6</div>
+            </div>
+          </div>
+          <div class="aligning-objects">
+            <div class="grid grid--aligning-start">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 в середині</div>
+              <span class="grid__item">3 комірок</span>
+              <div class="grid__item">4 по горизонталі</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6 start</div>
+            </div>
+            <div class="grid grid--aligning-end">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 в середині</div>
+              <span class="grid__item">3 комірок</span>
+              <div class="grid__item">4 по горизонталі</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6 end</div>
+            </div>
+            <div class="grid grid--aligning-items-end">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 комірок</div>
+              <span class="grid__item">3 в середені</span>
+              <div class="grid__item">4 grid-контейнера</div>
+              <div class="grid__item">5 по горизонталі</div>
+              <div class="grid__item">6 end</div>
+            </div>
+            <div class="grid grid--aligning-items-space-between">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 комірок</div>
+              <span class="grid__item">3 в середені</span>
+              <div class="grid__item">4 grid-контейнера</div>
+              <div class="grid__item">5 по горизонталі</div>
+              <div class="grid__item">6 space between</div>
+            </div>
+            <div class="grid grid--aligning-vertical-end">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 в середині</div>
+              <span class="grid__item">3 комірок</span>
+              <div class="grid__item">4 по вертикалі</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6 end</div>
+            </div>
+            <div class="grid grid--aligning-center">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 в середині</div>
+              <span class="grid__item">3 комірок</span>
+              <div class="grid__item">4 відцентрувати</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--aligning-items-vertical-end">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 комірок</div>
+              <span class="grid__item">3 в середені</span>
+              <div class="grid__item">4 grid-контейнера</div>
+              <div class="grid__item">5 по вертикалі</div>
+              <div class="grid__item">6 end</div>
+            </div>
+            <div class="grid grid--aligning-items-vertical-space-between">
+              <div class="grid__item">1 вирівнювання</div>
+              <div class="grid__item">2 комірок</div>
+              <span class="grid__item">3 в середені</span>
+              <div class="grid__item">4 grid-контейнера</div>
+              <div class="grid__item">5 по вертикалі</div>
+              <div class="grid__item">6 space-between</div>
+            </div>
+          </div>
+          <div class="minmax-property">
+            <div class="grid grid--minmax">
+              <div class="grid__item">1 minmax</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--big-minmax">
+              <div class="grid__item">1 big-minmax</div>
+              <div class="grid__item">2</div>
+              <span class="grid__item">3</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--auto-fit">
+              <div class="grid__item">1 автоматична</div>
+              <div class="grid__item">2 перебудова сітки</div>
+              <div class="grid__item">3 auto-fit</div>
+            </div>
+            <div class="grid grid--auto-fill">
+              <div class="grid__item">1 автоматична</div>
+              <div class="grid__item">2 перебудова сітки</div>
+              <div class="grid__item">3 auto-fill</div>
+            </div>
+          </div>
+          <div class="elements-properties">
+            <div class="grid grid--elements">
+              <div class="grid__item">1 horisontal</div>
+              <div class="grid__item">2 vertical</div>
+              <span class="grid__item">3 Початок і кінець по горизонталі</span>
+              <div class="grid__item">4 По горизонталі і вертикалі</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+            <div class="grid grid--elements-places">
+              <div class="grid__item">1</div>
+              <div class="grid__item">2 два місця по горизонталі</div>
+              <span class="grid__item">3 два місця по вертикалі</span>
+              <div class="grid__item">4</div>
+              <div class="grid__item">5</div>
+              <div class="grid__item">6</div>
+            </div>
+          </div>
+          <div class="grid-area" id="grid-area">
+            <div class="grid-area__header">Grid area - header</div>
+            <div class="grid-area__side">Side</div>
+            <div class="grid-area__body">
+              Body Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              obcaecati quasi voluptatem dignissimos sint adipisci. Similique sint
+              corporis qui voluptates unde aliquam aliquid repellendus, alias
+              consequatur molestias numquam, error odit.
+            </div>
+            <div class="grid-area__footer">Footer</div>
+          </div>
+        </div>
+      </div>
+      <div class="example" id="example">
+        <div class="example__container">
+          <div class="moments-grid">
+            <div class="moments-grid__item">
+              <img src="img/bali.jpg" alt="Bali">
+              <span>Bali</span>
+            </div>
+            <div class="moments-grid__item">
+              <img src="img/dubai.jpg" alt="Dubai">
+              <span>Dubai</span>
+            </div>
+            <div class="moments-grid__item">
+              <img src="img/paris.jpg" alt="Paris">
+              <span>Paris</span>
+            </div>
+            <div class="moments-grid__item">
+              <img src="img/italy.jpg" alt="Italy">
+              <span>Italy</span>
+            </div>
+            <div class="moments-grid__item">
+              <img src="img/bali.jpg" alt="Bali">
+              <span>Bali</span>
+            </div>
+            <div class="moments-grid__item">
+              <img src="img/dubai.jpg" alt="Dubai">
+              <span>Dubai</span>
+            </div>
+            <div class="moments-grid__item">
+              <img src="img/paris.jpg" alt="Paris">
+              <span>Paris</span>
+            </div>
+          </div>
+          <div class="moments-flex">
+            <div class="moments-flex__big">
+              <img src="img/bali.jpg" alt="Bali">
+              <span>Bali</span>
+            </div>
+            <div class="moments-flex__side">
+              <div class="moments-flex__middle">
+                <img src="img/dubai.jpg" alt="Dubai">
+                <span>Dubai</span>
+              </div>
+              <div class="moments-flex__item">
+                <img src="img/paris.jpg" alt="Paris">
+                <span>Paris</span>
+              </div>
+              <div class="moments-flex__item">
+                <img src="img/italy.jpg" alt="Italy">
+                <span>Italy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blossomia" id="blossomia">
+        <div class="blossomia__container">
+          <!-- <div class="blossomia__items">
+            <div class="blossomia__item title-item">
+              <h2 class="title-item__text">
+                Catalog of Floral Delights for Every Occasion
+              </h2>
+            </div>
+            <div class="blossomia__item card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-1.jpg" alt="Enchanted Petals">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Enchanted Petals</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">70 Euro</div>
+            </div>
+            <div class="blossomia__item card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-2.jpg" alt="Floral Harmony">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Floral Harmony</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">80 Euro</div>
+            </div>
+            <div class="blossomia__item card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-3.jpg" alt="Whispering Meadows">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Whispering Meadows</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">45 Euro</div>
+            </div>
+            <div class="blossomia__item card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-5.jpg" alt="Serene Bliss">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Serene Bliss</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">60 Euro</div>
+            </div>
+            <div class="blossomia__item card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-4.jpg" alt="Springtime Serenade">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Springtime Serenade</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">65 Euro</div>
+            </div>
+            <div class="blossomia__item card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-6.jpg" alt="Blooming Splendor">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Blooming Splendor</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">50 Euro</div>
+            </div>
+            <button class="blossomia__item item-button">Open More</button>
+          </div> -->
+
+          <!-- Flex + Grid -->
+
+          <div class="blossomia__side">
+            <div class="blossomia__cards">
+              <div class="blossomia__card card-floral">
+                <a class="card-floral__img-link" href="#">
+                  <img class="card-floral__image" src="img/blossomia/flowers-1.jpg" alt="Enchanted Petals">
+                </a>
+                <div class="card-floral__content">
+                  <h3 class="card-floral__title">
+                    <a class="card-floral__link" href="#">Enchanted Petals</a>
+                  </h3>
+                  <div class="card-floral__buttons">
+                    <button class="card-floral__like" type="button">
+                      <img src="img/blossomia/icons/like.svg" alt="like">
+                    </button>
+                    <button class="card-floral__cart" type="button">
+                      <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                    </button>
+                  </div>
+                </div>
+                <div class="card-floral__price">70 Euro</div>
+              </div>
+              <div class="blossomia__card card-floral">
+                <a class="card-floral__img-link" href="#">
+                  <img class="card-floral__image" src="img/blossomia/flowers-2.jpg" alt="Floral Harmony">
+                </a>
+                <div class="card-floral__content">
+                  <h3 class="card-floral__title">
+                    <a class="card-floral__link" href="#">Floral Harmony</a>
+                  </h3>
+                  <div class="card-floral__buttons">
+                    <button class="card-floral__like" type="button">
+                      <img src="img/blossomia/icons/like.svg" alt="like">
+                    </button>
+                    <button class="card-floral__cart" type="button">
+                      <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                    </button>
+                  </div>
+                </div>
+                <div class="card-floral__price">80 Euro</div>
+              </div>
+            </div>
+            <button class="blossomia__button">Open More</button>
+          </div>
+          <div class="blossomia__main">
+            <h2 class="blossomia__title">
+              Catalog of Floral Delights for Every Occasion
+            </h2>
+            <div class="blossomia__card card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-3.jpg" alt="Whispering Meadows">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Whispering Meadows</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">45 Euro</div>
+            </div>
+            <div class="blossomia__card card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-5.jpg" alt="Serene Bliss">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Serene Bliss</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">60 Euro</div>
+            </div>
+            <div class="blossomia__card card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-4.jpg" alt="Springtime Serenade">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Springtime Serenade</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">65 Euro</div>
+            </div>
+            <div class="blossomia__card card-floral">
+              <a class="card-floral__img-link" href="#">
+                <img class="card-floral__image" src="img/blossomia/flowers-6.jpg" alt="Blooming Splendor">
+              </a>
+              <div class="card-floral__content">
+                <h3 class="card-floral__title">
+                  <a class="card-floral__link" href="#">Blooming Splendor</a>
+                </h3>
+                <div class="card-floral__buttons">
+                  <button class="card-floral__like" type="button">
+                    <img src="img/blossomia/icons/like.svg" alt="like">
+                  </button>
+                  <button class="card-floral__cart" type="button">
+                    <img src="img/blossomia/icons/shopping-cart.svg" alt="cart">
+                  </button>
+                </div>
+              </div>
+              <div class="card-floral__price">50 Euro</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecobazar" id="ecobazar">
+        <div class="ecobazar__container">
+          <div class="ecobazar__title-block">
+            <span class="ecobazar__label">Products</span>
+            <h2 class="ecobazar__title">Our Featured Products</h2>
+          </div>
+          <div class="ecobazar__featured">
+            <div class="ecobazar__products">
+              <div class="ecobazar__product ad">
+                <img class="ad__image" src="img/ecobazar/summer-sale.jpg" alt="Sammer sale">
+                <div class="ad__proposal">
+                  <div class="ad__info">
+                    <span class="ad__name">Summer Sale</span>
+                    <span class="ad__price">75% off</span>
+                  </div>
+                  <button class="ad__button white-button">Shop Now</button>
+                </div>
+              </div>
+              <div class="ecobazar__product product">
+                <a class="product__img-link" href="#">
+                  <img class="product__image" src="img/ecobazar/chanise-cabbage.jpg" alt="Chanise Cabbage">
+                </a>
+                <div class="product__content">
+                  <div class="product__info">
+                    <h3 class="product__title">
+                      <a class="product__link" href="#">
+                        Chanise Cabbage
+                      </a>
+                    </h3>
+                    <p class="product__price">$14.99</p>
+                    <div class="product__rating">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                    </div>
+                  </div>
+                  <button class="product__cart-btn btn-cart"></button>
+                </div>
+                <div class="product__action-block">
+                  <button class="product__heart-btn btn-heart"></button>
+                  <button class="product__eye-btn btn-eye"></button>
+                </div>
+              </div>
+              <div class="ecobazar__product product">
+                <a class="product__img-link" href="#">
+                  <img class="product__image" src="img/ecobazar/green-lettuce.jpg" alt="Green Lettuce">
+                </a>
+                <div class="product__content">
+                  <div class="product__info">
+                    <h3 class="product__title">
+                      <a class="product__link" href="#">
+                        Green Lettuce
+                      </a>
+                    </h3>
+                    <p class="product__price">$14.99</p>
+                    <div class="product__rating">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                    </div>
+                  </div>
+                  <button class="product__cart-btn btn-cart"></button>
+                </div>
+                <div class="product__action-block">
+                  <button class="product__heart-btn btn-heart"></button>
+                  <button class="product__eye-btn btn-eye"></button>
+                </div>
+              </div>
+              <div class="ecobazar__product product">
+                <a class="product__img-link" href="#">
+                  <img class="product__image" src="img/ecobazar/green-chili.jpg" alt="Green Chili">
+                </a>
+                <div class="product__content">
+                  <div class="product__info">
+                    <h3 class="product__title">
+                      <a class="product__link" href="#">
+                        Green Chili
+                      </a>
+                    </h3>
+                    <p class="product__price">$14.99</p>
+                    <div class="product__rating">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                    </div>
+                  </div>
+                  <button class="product__cart-btn btn-cart"></button>
+                </div>
+                <div class="product__action-block">
+                  <button class="product__heart-btn btn-heart"></button>
+                  <button class="product__eye-btn btn-eye"></button>
+                </div>
+              </div>
+              <div class="ecobazar__product product">
+                <a class="product__img-link" href="#">
+                  <img class="product__image" src="img/ecobazar/corn.jpg" alt="Corn">
+                </a>
+                <div class="product__content">
+                  <div class="product__info">
+                    <h3 class="product__title">
+                      <a class="product__link" href="#">
+                        Corn
+                      </a>
+                    </h3>
+                    <p class="product__price">$14.99</p>
+                    <div class="product__rating">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                      <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                    </div>
+                  </div>
+                  <button class="product__cart-btn btn-cart"></button>
+                </div>
+                <div class="product__action-block">
+                  <button class="product__heart-btn btn-heart"></button>
+                  <button class="product__eye-btn btn-eye"></button>
+                </div>
+              </div>
+            </div>
+            <div class="ecobazar__proposals">
+              <div class="ecobazar__categories category">
+                <h3 class="category__title">Hot Deals</h3>
+                <div class="category__items">
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/green-apple.jpg" alt="Green Apple">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Green Apple</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/indian-malta.jpg" alt="Indian Malta">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Indian Malta</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/green-lettuce.jpg" alt="Green Lettuce">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Green Lettuce</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ecobazar__categories category">
+                <h3 class="category__title">Best Seller</h3>
+                <div class="category__items">
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/eggplant.jpg" alt="Eggplant">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Eggplant</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/red-capsicum.jpg" alt="Red Capsicum">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <p class="sale-item__link" href="#">Red Capsicum</p>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                          <p class="sale-item__full-price">$20.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/red-tomatos.jpg" alt="Red Tomatos">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Red Tomatos</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ecobazar__categories category">
+                <h3 class="category__title">Top Rated</h3>
+                <div class="category__items">
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/big-potatos.jpg" alt="Big Potatos">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Big Potatos</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/corn.jpg" alt="Corn">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Corn</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                          <p class="sale-item__full-price">$20.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__item sale-item">
+                    <a class="sale-item__img-link" href="#">
+                      <img class="sale-item__image" src="img/ecobazar/fresh-cauliflower.jpg" alt="Fresh cauliflower">
+                    </a>
+                    <div class="sale-item__content">
+                      <div class="sale-item__info">
+                        <h4 class="sale-item__title">
+                          <a class="sale-item__link" href="#">Fresh cauliflower</a>
+                        </h4>
+                        <div class="sale-item__price">
+                          <p class="sale-item__total">$14.99</p>
+                        </div>
+                      </div>
+                      <div class="sale-item__rating">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/star.svg" alt="Orange star">
+                        <img src="img/ecobazar/icons/gray-star.svg" alt="Gray star">
+                      </div>
+                      <div class="sale-item__activity">
+                        <button class="sale-item__cart-btn btn-cart"></button>
+                        <button class="sale-item__eye-btn btn-eye"></button>
+                        <button class="sale-item__heart-btn btn-heart"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ecobazar__categories ad">
+                <img class="ad__image" src="img/ecobazar/hot-sale.jpg" alt="HOt Sale">
+                <div class="ad__proposal">
+                  <div class="ad__info">
+                    <span class="ad__name">HOt Sale</span>
+                    <span class="ad__price"><strong>Save 37%</strong> on <br> Every Order</span>
+                  </div>
+                  <button class="ad__button white-button">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#up" class="footer__up"></a>
+      <h2 class="footer__contacts">Мої контакти:</h2>
+      <ul>
+        <li><a target="_blank" href="#" title="Перейти в Telegram для спілкування">Telegram</a></li>
+        <li><a target="_blank" href="#" title="Перейти у Viber для спілкування">Viber</a></li>
+        <li><a target="_blank" href="#" title="Перейти в LinkedIn для знайомства">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

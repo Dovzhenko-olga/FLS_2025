@@ -103,18 +103,18 @@ body {
 .news__container > *:not(:last-child) {
   margin-bottom: 32px;
 }
-.section-header {
+.section-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
-.section-header__title {
+.section-title__text {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.2;
 }
-.section-header__link {
+.section-title__link {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -124,7 +124,7 @@ body {
   font-weight: 500;
   transition: all 0.5s ease;
 }
-.section-header__link::after {
+.section-title__link::after {
   content: "";
   width: 17px;
   height: 14px;
@@ -285,11 +285,8 @@ body {
   height: 20px;
   background: url(../img/icons/eye.svg);
 }
-.news__title {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: center;
+.section-title--center {
+  justify-content: center;
 }
 .news__list {
   display: flex;
@@ -448,7 +445,7 @@ body {
 .footer li {
   color: #612f2f;
 }
-@media (any-hover: hover) {
+@media (any-hover: hover), (pointer: fine) {
   [class*="__back"]:hover {
     color: #68b8f5;
     letter-spacing: 17px;
@@ -462,11 +459,11 @@ body {
     border-color: #4d5452;
     width: 100%;
   }
-  .section-header__link:hover {
+  .section-title__link:hover {
     color: #2c742f;
     letter-spacing: 1.1px;
   }
-  .section-header__link:hover::after {
+  .section-title__link:hover::after {
     background: url(../img/icons/arrow-hover.svg);
   }
   .features__item:hover::before {
@@ -526,7 +523,7 @@ body {
     box-shadow: 0 0 50px 15px #13b961, inset 0 0 15px 2px #13b961;
   }
 }
-@media (any-hover: none) {
+@media (any-hover: none), (pointer: coarse) {
   .product__reaction-block {
     opacity: 1;
     visibility: visible;
@@ -574,6 +571,14 @@ body {
     font-size: 16px;
     letter-spacing: 5px;
   }
+  .features__container > *:not(:last-child),
+  .news__container > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .features,
+  .news {
+    padding: 15px 0;
+  }
   .features__item {
     flex: 0 1 calc(50% + 1px);
   }
@@ -588,6 +593,17 @@ body {
   }
   .header__nav-item {
     min-width: 100px;
+  }
+  .section-title__text {
+    font-size: 30px;
+  }
+  .features__header-section {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+  .section-title__link {
+    align-self: center;
   }
   .features__item {
     flex: 0 1 100%;
