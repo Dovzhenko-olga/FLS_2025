@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css?family=Neucha:regular&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Урок 18</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__back" href="../index.html" title="Повернутися на сторінку зі списком уроків">
+        На головну
+      </a>
+      <div class="header__container">
+        <nav>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#practice">Практика</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#ecobazar">Ecobazar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="up">
+      <div class="page__container">
+        <h1 class="page__title">Семантика.</h1>
+      </div>
+      <section class="practice" id="practice">
+        <div class="practice__container">
+          <h2 class="practice__title">Відпрацювання матеріалу</h2>
+          <dl class="terms">
+            <dt class="terms__title">Великий державний герб України</dt>
+            <dd class="terms__description">
+              це тризуб, золотого кольору на синьому щиті, офіційно затверджений Верховною Радою 19 лютого 1992 року.
+            </dd>
+            <dt class="terms__title">Малий Державний Герб України</dt>
+            <dd class="terms__description">
+              офіційний символ держави Україна, передбачений статтею 20 Конституції України. Синій щит із тонкою золотою
+              облямівкою. Один з елементів - козак в червоному мундирі і червоних шароварах, озброєний золотими мушкетом
+              та шаблею на хоругві.
+            </dd>
+          </dl>
+          <div class="media">
+            <img class="media__symbol" src="img/national-symbol.png" alt="Coat of arms of Ukraine">
+            <video class="media__flag" muted autoplay loop src="media/flag.mp4"></video>
+            <audio class="media__hymn" controls src="media/soundua.mp3"></audio>
+          </div>
+          <figure class="figure">
+            <img src="img/large-coat-of-arms.png" alt="Large coat of arms">
+            <figcaption>Великий державний герб України</figcaption>
+          </figure>
+          <div class="bill-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>№ п/п</th>
+                  <th>Назва</th>
+                  <th>Ціна</th>
+                  <th>Кількість</th>
+                  <th>Вартість</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Молоко</td>
+                  <td>50 грн.</td>
+                  <td>2</td>
+                  <td>100 грн.</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Хліб</td>
+                  <td>35 грн.</td>
+                  <td>3</td>
+                  <td>105 грн.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5">Всього: 205грн.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <q>Ми повинні бути тим світом, який хочемо побачити в інших.</q>
+          <blockquote>
+            Якщо немає націоналізму, немає нації, я так до цього ставлюся.
+            Націоналізм має бути не агресивний, він повинен бути дипломатичний,
+            інтелігентний, і тоді я його підтримую.
+            <cite>Кузьма Скрябін</cite>
+          </blockquote>
+          <p>
+            <time datetime="2025-06-03">6 червня 2025</time>
+          </p>
+          <p>
+            <time datetime="2025-06-03T14:33:25+03:00">6 червня 2025, 14:30 (за Київським часом)</time>
+          </p>
+          <details open>
+            <summary>Командир «Азову» Пугач</summary>
+            <p><q>Поки можеш, треба битися»</q></p>
+            <blockquote>
+              Суспільство має бути на стороні <mark>військового</mark>. Воно повинно хвилюватися. Люди повинні розуміти,
+              що зараз відбувається взагалі в країні. Де йдуть бойові дії. Шістнадцятирічний хлопець повинен знати, що
+              ДШВ —
+              <b>круті</b>. Тому що вони в Курській області. Про важливу, круту операцію.
+            </blockquote>
+          </details>
+          <details>
+            <summary>Маргарита Бурковська</summary>
+            <p>Від <span>акторства</span> до служби в 3 ОШБр:</p>
+            <p>По-перше, свідомість, що ти береш участь у здобуванні <strong>української держави</strong>. Розуміння
+              того, що є
+              виклик, є
+              боротьба і в ній треба просто взяти участь. І можна взяти участь якось сумно, печально, а можна нормально.
+            </p>
+          </details>
+          <fieldset>
+            <legend>Авторизуйтеся</legend>
+            <label>
+              Email
+              <input type="email" name="form[]">
+            </label>
+            <label>
+              Password
+              <input type="password" name="form[]">
+            </label>
+          </fieldset>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174364.84373818734!2d31.843188038365874!3d46.93318071136015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cb89fb7213d5%3A0x970e39fab9e05680!2z0J3QuNC60L7Qu9Cw0LXQsiwg0J3QuNC60L7Qu9Cw0LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA1NDAwMA!5e0!3m2!1sru!2sua!4v1748972762327!5m2!1sru!2sua"
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <div class="ecobazar" id="ecobazar">
+        <div class="ecobazar__container">
+          <article class="ecobazar__blog blog">
+            <div class="blog__image">
+              <img src="img/oranges.jpg" alt="Some oranges slised">
+            </div>
+            <div class="blog__labels">
+              <div class="blog__label">
+                <img src="img/icons/tag.svg" alt="tag"> <!-- Маючи CSS, це може бути before -->
+                Food
+              </div>
+              <div class="blog__label">
+                <img src="img/icons/user.svg" alt="user">
+                By Admin
+              </div>
+              <div class="blog__label">
+                <img src="img/icons/chat.svg" alt="chat">
+                65 Comments
+              </div>
+            </div>
+            <h2 class="blog__title">
+              Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.
+            </h2>
+            <div class="blog__author author">
+              <div class="author__content">
+                <img class="author__photo" src="img/author.jpg" alt="author">
+                <div class="author__description">
+                  <p class="author__name">Cameron Williamson</p>
+                  <div class="author__info">
+                    <time class="author__time" datetime="2021-04-04">4 April, 2021</time> •
+                    <p class="author__popularity">6 min read</p>
+                  </div>
+                </div>
+              </div>
+              <address class="author__social">
+                <img src="img/icons/facebook.svg" alt="facebook">
+                <img src="img/icons/twitter.svg" alt="twitter">
+                <img src="img/icons/pinterest.svg" alt="pinterest">
+                <img src="img/icons/instagram.svg" alt="instagram">
+                <img src="img/icons/link.svg" alt="link">
+              </address>
+            </div>
+            <section class="blog__content">
+              <h3 class="blog__subtitle">
+                Maecenas lacinia felis nec placerat sollicitudin. Quisque placerat dolor at scelerisque imperdiet.
+                Phasellus tristique felis dolor.
+              </h3>
+              <p>
+                Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus. Fusce malesuada sed
+                velit ut dictum. Morbi faucibus vitae orci at euismod. Integer auctor augue in erat vehicula, quis
+                fermentum ex finibus.
+              </p>
+              <p>
+                Mauris pretium elit a dui pulvinar, in ornare sapien euismod. Nullam interdum nisl ante, id feugiat quam
+                euismod commodo. Sed ultrices lectus ut iaculis rhoncus. Aenean non dignissim justo, at fermentum
+                turpis. Sed molestie, ligula ut molestie ultrices, tellus ligula viverra neque, malesuada consectetur
+                diam sapien volutpat risus. Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit
+                amet erat quis
+                ex convallis suscipit. ur ridiculus mus.
+              </p>
+              <div class="blog__pictures-block">
+                <img src="img/oranges-full.jpg" alt="Round oranges">
+                <img src="img/mango.jpg" alt="Sliced mango">
+              </div>
+              <p>
+                Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis vehicula ut, vestibulum ut mauris.
+                Nullam non felis varius dui rutrum rutrum in a nisi. Suspendisse elementum rutrum lorem sed luctus.
+                Proin iaculis euismod
+                metus non sollicitudin. Duis vel luctus lacus. Nullam faucibus iaculis convallis. In ullamcorper nibh
+                ipsum, eget
+                lacinia eros pulvinar a. Integer accumsan arcu nec faucibus ultricies.
+              </p>
+            </section>
+            <section class="blog__sale sale-block">
+              <div class="sale-block__content">
+                <h3 class="sale-block__title">Summer Sales</h3>
+                <p class="sale-block__name">Fresh Fruit</p>
+                <a class="sale-block__link green-btn" href="#">
+                  Shop Now
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                    <path d="M16 7.50098H1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M9.94995 1.47559L16 7.49959L9.94995 13.5246" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="sale-block__progres">
+                up to
+                <span>56%</span>
+                Off
+              </div>
+            </section>
+          </article>
+          <section class="ecobazar__comment-form">
+            <h2 class="ecobazar__form-name">Leave a Comment</h2>
+            <form method="post" action="#" enctype="multipart/form-data" class="ecobazar__form form">
+              <label class="form__item">
+                <span class="form__label">Full Name</span>
+                <input class="form__input" required name="form[]" type="text" placeholder="Zakir Hossen">
+              </label>
+              <label class="form__item">
+                <span class="form__label">Email</span>
+                <input class="form__input" required name="form[]" type="email" placeholder="zakirsoft.20@g|">
+              </label>
+              <label class="form__item">
+                <span class="form__label">Message</span>
+                <textarea name="form[]" class="form__textarea" placeholder="Write your comment here…"></textarea>
+              </label>
+              <label class="form__check-item">
+                <input class="form__input" type="checkbox" name="form[]">
+                <span class="form__label">Save my name and email in this browser for the next time I comment.</span>
+              </label>
+              <button class="form__button green-btn" type="submit">Post Comments</button>
+            </form>
+          </section>
+          <section class="ecobazar__comments comments">
+            <h2 class="comments__title">Comments</h2>
+            <div class="comments__list">
+              <article class="comments__item comment">
+                <img class="comment__img" src="img/photo1.jpg" alt="photo">
+                <div class="comment__content">
+                  <div class="comment__title">
+                    <h3>Annette Black</h3>
+                    •
+                    <time datetime="2021-04-26">26 Apr, 2021</time>
+                  </div>
+                  <p>
+                    In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam
+                    malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.
+                  </p>
+                </div>
+              </article>
+              <article class="comments__item comment">
+                <img class="comment__img" src="img/photo2.jpg" alt="photo">
+                <div class="comment__content">
+                  <div class="comment__title">
+                    <h3>Devon Lane</h3>
+                    •
+                    <time datetime="2021-04-24">24 Apr, 2021</time>
+                  </div>
+                  <p>
+                    Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex
+                    convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales
+                    nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.
+                  </p>
+                </div>
+              </article>
+              <article class="comments__item comment">
+                <img class="comment__img" src="img/photo3.jpg" alt="photo">
+                <div class="comment__content">
+                  <div class="comment__title">
+                    <h3>Jacob Jones</h3>
+                    •
+                    <time datetime="2021-04-20">20 Apr, 2021</time>
+                  </div>
+                  <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                  </p>
+                </div>
+              </article>
+              <article class="comments__item comment">
+                <img class="comment__img" src="img/photo4.jpg" alt="photo">
+                <div class="comment__content">
+                  <div class="comment__title">
+                    <h3>Jane Cooper</h3>
+                    •
+                    <time datetime="2021-04-18">18 Apr, 2021</time>
+                  </div>
+                  <p>
+                    Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec
+                    orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.
+                  </p>
+                </div>
+              </article>
+              <article class="comments__item comment">
+                <img class="comment__img" src="img/photo5.jpg" alt="photo">
+                <div class="comment__content">
+                  <div class="comment__title">
+                    <h3>Darrell Steward</h3>
+                    •
+                    <time datetime="2021-04-07">7 Apr, 2021</time>
+                  </div>
+                  <p>
+                    Nulla molestie interdum ultricies.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <button class="comments__button white-btn">Load More</button>
+          </section>
+          <aside class="ecobazar__side side">
+            <input class="side__search" type="search" name="form[]">
+            <section class="side__categories">
+              <h2 class="side__title">Top Categories</h2>
+              <ul class="side__category-items">
+                <li class="side__category-item category">
+                  Fresh Fruit
+                  <span>(134)</span>
+                </li>
+                <li class="side__category-item category">
+                  Vegetables
+                  <span>(150)</span>
+                </li>
+                <li class="side__category-item category">
+                  Cooking
+                  <span>(54)</span>
+                </li>
+                <li class="side__category-item category">
+                  Snacks
+                  <span>(47)</span>
+                </li>
+                <li class="side__category-item category">
+                  Beverages
+                  <span>(43)</span>
+                </li>
+                <li class="side__category-item category">
+                  Beauty & Health
+                  <span>(38)</span>
+                </li>
+                <li class="side__category-item category">
+                  Bread & Bakery
+                  <span>(15)</span>
+                </li>
+              </ul>
+            </section>
+            <section class="side__popular">
+              <h2 class="side__title">Popular Tag</h2>
+              <ul class="side__tags">
+                <li class="side__tag">Healthy</li>
+                <li class="side__tag">Low fat</li>
+                <li class="side__tag">Vegetarian</li>
+                <li class="side__tag">Bread</li>
+                <li class="side__tag">Kid foods</li>
+                <li class="side__tag">Vitamins</li>
+                <li class="side__tag">Snacks</li>
+                <li class="side__tag">Tiffin</li>
+                <li class="side__tag">Meat</li>
+                <li class="side__tag">Launch</li>
+                <li class="side__tag">Dinner</li>
+              </ul>
+            </section>
+            <section class="side__gallery">
+              <h2 class="side__title">Our Gallery</h2>
+              <ul class="side__images">
+                <li class="side__image">
+                  <img src="img/gallery/gallery1.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery2.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery3.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery4.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery5.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery6.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery7.jpg" alt="img">
+                </li>
+                <li class="side__image">
+                  <img src="img/gallery/gallery8.jpg" alt="img">
+                </li>
+              </ul>
+            </section>
+            <section class="side__news">
+              <h2 class="side__title">Recently Added</h2>
+              <ul class="side__articles">
+                <li class="side__post post">
+                  <img class="post__image" src="img/mango-news.jpg" alt="mango">
+                  <div class="post__content">
+                    <h3 class="post__title">Curabitur porttitor orci eget nequ accumsan.</h3>
+                    <div class="post__date">
+                      <img src="img/icons/calendar.svg" alt="calendar">
+                      <time datetime="2021-04-25">Apr 25, 2021</time>
+                    </div>
+                  </div>
+                </li>
+                <li class="side__post post">
+                  <img class="post__image" src="img/orange-news.jpg" alt="oranges">
+                  <div class="post__content">
+                    <h3 class="post__title">Donec mattis arcu faucibus suscipit viverra.</h3>
+                    <div class="post__date">
+                      <img src="img/icons/calendar.svg" alt="calendar">
+                      <time datetime="2021-04-25">Apr 25, 2021</time>
+                    </div>
+                  </div>
+                </li>
+                <li class="side__post post">
+                  <img class="post__image" src="img/blackberry-news.jpg" alt="blackberry">
+                  <div class="post__content">
+                    <h3 class="post__title">Quisque posuere tempus rutrum. Integer velit ex.</h3>
+                    <div class="post__date">
+                      <img src="img/icons/calendar.svg" alt="calendar">
+                      <time datetime="2021-04-25">Apr 25, 2021</time>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#up" class="footer__up"></a>
+      <h2 class="footer__contacts">Мої контакти:</h2>
+      <address>
+        <ul>
+          <li><a target="_blank" href="#" title="Перейти в Telegram для спілкування">Telegram</a></li>
+          <li><a target="_blank" href="#" title="Перейти у Viber для спілкування">Viber</a></li>
+          <li><a target="_blank" href="#" title="Перейти в LinkedIn для знайомства">LinkedIn</a></li>
+        </ul>
+      </address>
+    </footer>
+  </div>
+</body>
+
+</html>
