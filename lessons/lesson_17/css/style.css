@@ -440,6 +440,7 @@ body {
 }
 .blossomia__container {
   display: flex;
+  flex-direction: row-reverse;
   gap: 31px;
 }
 
@@ -608,7 +609,7 @@ body {
 .blossomia__cards {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 37px;
   margin-bottom: 50px;
 }
 .card-floral {
@@ -689,28 +690,18 @@ body {
   left: -7px;
 }
 .blossomia__button {
-  position: relative;
   display: flex;
   gap: 10px;
   align-items: center;
-  padding: 9px 30px;
+  width: fit-content;
+  padding: 19px 40px;
+  background-color: #dbccba;
   color: #2c2c2c;
   font-size: 17px;
   line-height: 1.377;
-  background-color: #dbccba;
-  z-index: 1;
-}
-.blossomia__button::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  background-color: transparent;
   border: 1px solid #dbccba;
-  z-index: -1;
-  transition: background-color 0.5s ease;
+  box-shadow: inset 0 0 0 10px #f8f3ec;
+  transition: all 0.5s ease;
 }
 .blossomia__button::after {
   content: "";
@@ -1130,8 +1121,8 @@ body {
   /* .item-button:hover::before {
     background-color: #dbccba;
   } */
-  .blossomia__button:hover::before {
-    background-color: #dbccba;
+  .blossomia__button:hover {
+    box-shadow: inset 0 0 0 10px #dbccba;
   }
   .white-button:hover {
     box-shadow: 0px 0px 12px 0px #0000001f, inset 0px 0px 12px 0px #0000001f;
@@ -1213,24 +1204,21 @@ body {
   .product__cart-btn {
     background-color: #00b207;
   }
+  .sale-item {
+    align-items: center;
+  }
   .product__action-block,
   .sale-item__activity {
     opacity: 1;
     visibility: visible;
   }
   .sale-item__activity {
-    top: -2px;
-    right: 10px;
-    flex-direction: column;
-    gap: 2px;
-    align-items: end;
+    position: static;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
     background-color: transparent;
-    scale: 0.9;
-  }
-  @media (max-width: 450px) {
-    .sale-item__activity {
-      right: 0px;
-    }
   }
 }
 @media (max-width: 1350px) {
@@ -1325,7 +1313,7 @@ body {
     grid-row-start: 15;
   } */
   .blossomia__container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 37px;
   }
   .blossomia__title {
@@ -1364,6 +1352,10 @@ body {
 @media (max-width: 668.98px) {
   .ecobazar__proposals .ad {
     margin: 0 -15px;
+  }
+  .sale-item__activity {
+    gap: 25%;
+    justify-content: start;
   }
 }
 @media (max-width: 650px) {
@@ -1441,6 +1433,10 @@ body {
   } */
   .blossomia__title {
     font-size: 35px;
+  }
+  .sale-item__activity {
+    gap: 15px;
+    justify-content: space-between;
   }
   .footer__up {
     bottom: 10px;

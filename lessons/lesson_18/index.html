@@ -148,20 +148,20 @@
             <div class="blog__image">
               <img src="img/oranges.jpg" alt="Some oranges slised">
             </div>
-            <div class="blog__labels">
-              <div class="blog__label">
+            <ul class="blog__labels">
+              <li class="blog__label">
                 <img src="img/icons/tag.svg" alt="tag"> <!-- Маючи CSS, це може бути before -->
                 Food
-              </div>
-              <div class="blog__label">
+              </li>
+              <li class="blog__label">
                 <img src="img/icons/user.svg" alt="user">
                 By Admin
-              </div>
-              <div class="blog__label">
+              </li>
+              <li class="blog__label">
                 <img src="img/icons/chat.svg" alt="chat">
                 65 Comments
-              </div>
-            </div>
+              </li>
+            </ul>
             <h2 class="blog__title">
               Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.
             </h2>
@@ -176,13 +176,33 @@
                   </div>
                 </div>
               </div>
-              <address class="author__social">
-                <img src="img/icons/facebook.svg" alt="facebook">
-                <img src="img/icons/twitter.svg" alt="twitter">
-                <img src="img/icons/pinterest.svg" alt="pinterest">
-                <img src="img/icons/instagram.svg" alt="instagram">
-                <img src="img/icons/link.svg" alt="link">
-              </address>
+              <ul class="author__social">
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Go to Facebook">
+                    <img src="img/icons/facebook.svg" alt="facebook">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Go to Twitter">
+                    <img src="img/icons/twitter.svg" alt="twitter">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Go to Pinterest">
+                    <img src="img/icons/pinterest.svg" alt="pinterest">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Go to Instagram">
+                    <img src="img/icons/instagram.svg" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Go to Link">
+                    <img src="img/icons/link.svg" alt="link">
+                  </a>
+                </li>
+              </ul>
             </div>
             <section class="blog__content">
               <h3 class="blog__subtitle">
@@ -260,77 +280,87 @@
           </section>
           <section class="ecobazar__comments comments">
             <h2 class="comments__title">Comments</h2>
-            <div class="comments__list">
-              <article class="comments__item comment">
-                <img class="comment__img" src="img/photo1.jpg" alt="photo">
-                <div class="comment__content">
-                  <div class="comment__title">
-                    <h3>Annette Black</h3>
-                    •
-                    <time datetime="2021-04-26">26 Apr, 2021</time>
+            <ul class="comments__list">
+              <li>
+                <article class="comments__item comment">
+                  <img class="comment__img" src="img/photo1.jpg" alt="photo">
+                  <div class="comment__content">
+                    <div class="comment__title">
+                      <h3>Annette Black</h3>
+                      •
+                      <time datetime="2021-04-26">26 Apr, 2021</time>
+                    </div>
+                    <blockquote>
+                      In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam
+                      malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.
+                    </blockquote>
                   </div>
-                  <p>
-                    In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam
-                    malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.
-                  </p>
-                </div>
-              </article>
-              <article class="comments__item comment">
-                <img class="comment__img" src="img/photo2.jpg" alt="photo">
-                <div class="comment__content">
-                  <div class="comment__title">
-                    <h3>Devon Lane</h3>
-                    •
-                    <time datetime="2021-04-24">24 Apr, 2021</time>
+                </article>
+              </li>
+              <li>
+                <article class="comments__item comment">
+                  <img class="comment__img" src="img/photo2.jpg" alt="photo">
+                  <div class="comment__content">
+                    <div class="comment__title">
+                      <h3>Devon Lane</h3>
+                      •
+                      <time datetime="2021-04-24">24 Apr, 2021</time>
+                    </div>
+                    <blockquote>
+                      Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex
+                      convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales
+                      nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.
+                    </blockquote>
                   </div>
-                  <p>
-                    Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex
-                    convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales
-                    nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.
-                  </p>
-                </div>
-              </article>
-              <article class="comments__item comment">
-                <img class="comment__img" src="img/photo3.jpg" alt="photo">
-                <div class="comment__content">
-                  <div class="comment__title">
-                    <h3>Jacob Jones</h3>
-                    •
-                    <time datetime="2021-04-20">20 Apr, 2021</time>
+                </article>
+              </li>
+              <li>
+                <article class="comments__item comment">
+                  <img class="comment__img" src="img/photo3.jpg" alt="photo">
+                  <div class="comment__content">
+                    <div class="comment__title">
+                      <h3>Jacob Jones</h3>
+                      •
+                      <time datetime="2021-04-20">20 Apr, 2021</time>
+                    </div>
+                    <blockquote>
+                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </blockquote>
                   </div>
-                  <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                  </p>
-                </div>
-              </article>
-              <article class="comments__item comment">
-                <img class="comment__img" src="img/photo4.jpg" alt="photo">
-                <div class="comment__content">
-                  <div class="comment__title">
-                    <h3>Jane Cooper</h3>
-                    •
-                    <time datetime="2021-04-18">18 Apr, 2021</time>
+                </article>
+              </li>
+              <li>
+                <article class="comments__item comment">
+                  <img class="comment__img" src="img/photo4.jpg" alt="photo">
+                  <div class="comment__content">
+                    <div class="comment__title">
+                      <h3>Jane Cooper</h3>
+                      •
+                      <time datetime="2021-04-18">18 Apr, 2021</time>
+                    </div>
+                    <blockquote>
+                      Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec
+                      orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.
+                    </blockquote>
                   </div>
-                  <p>
-                    Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec
-                    orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.
-                  </p>
-                </div>
-              </article>
-              <article class="comments__item comment">
-                <img class="comment__img" src="img/photo5.jpg" alt="photo">
-                <div class="comment__content">
-                  <div class="comment__title">
-                    <h3>Darrell Steward</h3>
-                    •
-                    <time datetime="2021-04-07">7 Apr, 2021</time>
+                </article>
+              </li>
+              <li>
+                <article class="comments__item comment">
+                  <img class="comment__img" src="img/photo5.jpg" alt="photo">
+                  <div class="comment__content">
+                    <div class="comment__title">
+                      <h3>Darrell Steward</h3>
+                      •
+                      <time datetime="2021-04-07">7 Apr, 2021</time>
+                    </div>
+                    <blockquote>
+                      Nulla molestie interdum ultricies.
+                    </blockquote>
                   </div>
-                  <p>
-                    Nulla molestie interdum ultricies.
-                  </p>
-                </div>
-              </article>
-            </div>
+                </article>
+              </li>
+            </ul>
             <button class="comments__button white-btn">Load More</button>
           </section>
           <aside class="ecobazar__side side">
@@ -388,63 +418,75 @@
               <h2 class="side__title">Our Gallery</h2>
               <ul class="side__images">
                 <li class="side__image">
-                  <img src="img/gallery/gallery1.jpg" alt="img">
+                  <img src="img/gallery/gallery1.jpg" alt="img gallery1">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery2.jpg" alt="img">
+                  <img src="img/gallery/gallery2.jpg" alt="img gallery2">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery3.jpg" alt="img">
+                  <img src="img/gallery/gallery3.jpg" alt="img gallery3">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery4.jpg" alt="img">
+                  <img src="img/gallery/gallery4.jpg" alt="img gallery4">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery5.jpg" alt="img">
+                  <img src="img/gallery/gallery5.jpg" alt="img gallery5">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery6.jpg" alt="img">
+                  <img src="img/gallery/gallery6.jpg" alt="img gallery6">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery7.jpg" alt="img">
+                  <img src="img/gallery/gallery7.jpg" alt="img gallery7">
                 </li>
                 <li class="side__image">
-                  <img src="img/gallery/gallery8.jpg" alt="img">
+                  <img src="img/gallery/gallery8.jpg" alt="img gallery8">
                 </li>
               </ul>
             </section>
             <section class="side__news">
               <h2 class="side__title">Recently Added</h2>
               <ul class="side__articles">
-                <li class="side__post post">
-                  <img class="post__image" src="img/mango-news.jpg" alt="mango">
-                  <div class="post__content">
-                    <h3 class="post__title">Curabitur porttitor orci eget nequ accumsan.</h3>
-                    <div class="post__date">
-                      <img src="img/icons/calendar.svg" alt="calendar">
-                      <time datetime="2021-04-25">Apr 25, 2021</time>
-                    </div>
-                  </div>
+                <li>
+                  <article class="side__post post">
+                    <a class="post__link" href="#">
+                      <img class="post__image" src="img/mango-news.jpg" alt="mango">
+                      <div class="post__content">
+                        <h3 class="post__title">Curabitur porttitor orci eget nequ accumsan.</h3>
+                        <div class="post__date">
+                          <img src="img/icons/calendar.svg" alt="calendar">
+                          <time datetime="2021-04-25">Apr 25, 2021</time>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </li>
-                <li class="side__post post">
-                  <img class="post__image" src="img/orange-news.jpg" alt="oranges">
-                  <div class="post__content">
-                    <h3 class="post__title">Donec mattis arcu faucibus suscipit viverra.</h3>
-                    <div class="post__date">
-                      <img src="img/icons/calendar.svg" alt="calendar">
-                      <time datetime="2021-04-25">Apr 25, 2021</time>
-                    </div>
-                  </div>
+                <li>
+                  <article class="side__post post">
+                    <a class="post__link" href="#">
+                      <img class="post__image" src="img/orange-news.jpg" alt="oranges">
+                      <div class="post__content">
+                        <h3 class="post__title">Donec mattis arcu faucibus suscipit viverra.</h3>
+                        <div class="post__date">
+                          <img src="img/icons/calendar.svg" alt="calendar">
+                          <time datetime="2021-04-25">Apr 25, 2021</time>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </li>
-                <li class="side__post post">
-                  <img class="post__image" src="img/blackberry-news.jpg" alt="blackberry">
-                  <div class="post__content">
-                    <h3 class="post__title">Quisque posuere tempus rutrum. Integer velit ex.</h3>
-                    <div class="post__date">
-                      <img src="img/icons/calendar.svg" alt="calendar">
-                      <time datetime="2021-04-25">Apr 25, 2021</time>
-                    </div>
-                  </div>
+                <li>
+                  <article class="side__post post">
+                    <a class="post__link" href="#">
+                      <img class="post__image" src="img/blackberry-news.jpg" alt="blackberry">
+                      <div class="post__content">
+                        <h3 class="post__title">Quisque posuere tempus rutrum. Integer velit ex.</h3>
+                        <div class="post__date">
+                          <img src="img/icons/calendar.svg" alt="calendar">
+                          <time datetime="2021-04-25">Apr 25, 2021</time>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </li>
               </ul>
             </section>
