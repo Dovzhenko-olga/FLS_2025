@@ -244,7 +244,7 @@ body {
   font-size: 1.25rem;
   padding: 1.5625rem;
   letter-spacing: 0.1em;
-  border-top: 0.0625rem solid #0000ff;
+  border-top: 1px solid #0000ff;
 }
 .footer__up {
   position: fixed;
@@ -335,12 +335,12 @@ body {
   }
 }
 @media (max-width: 32.5rem) {
-  .header__nav-link {
+  .header__nav-list {
     font-size: 1.125rem;
   }
 }
 @media (max-width: 30.6238em) {
-  .header__nav-link {
+  .header__nav-list {
     font-size: 1rem;
   }
   .footer__up {
